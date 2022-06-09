@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        background-color: #35363a;
+      }
+
+      .main {
+        width: 800px;
+        height: 500px;
+        position: absolute;
+        top: 15%;
+        left: 30%;
+      }
+      .main img {
+        display: block;
+        margin: 20pt auto;
+        width: 280px;
+        padding: 10pt;
+      }
+      .search {
+        display: block;
+        margin: auto;
+
+        width: 550px;
+        height: 45px;
+        background-image: url(./0606-01/search.jpg);
+        background-color: white;
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-position: 20px 15px;
+
+        font-size: 15px;
+        text-indent: 50px;
+        border-radius: 20pt;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="main">
+        <img src="./0606-01/google.png" alt="Google" />
+        <label>
+          <input
+            class="search"
+            type="search"
+            placeholder="搜尋Google或輸入網址"
+          />
+        </label>
+      </div>
+      <div class="shortcut"></div>
+    </div>
+  </body>
+</html>

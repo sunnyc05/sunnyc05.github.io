@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #232323;
+      }
+      .main {
+        width: 800px;
+        height: 800px;
+        position: absolute;
+        top: 15%;
+        left: 30%;
+      }
+      .logo img {
+        display: block;
+        margin: 30pt auto;
+        width: 270px;
+      }
+      .input {
+        margin: 15px auto;
+        padding: 13px;
+        width: 550px;
+        background-color: white;
+
+        font-size: 15px;
+        border-radius: 30pt;
+      }
+      input {
+        background-color: white;
+        font-size: 16px;
+        border: none;
+      }
+      #search {
+        width: 15px;
+        margin: 1px 8px 0;
+      }
+      #voice {
+        width: 12px;
+        position: relative;
+        left: 290px;
+        margin: 1px 0 0;
+      }
+      .shortcut {
+        display: flex;
+        flex-wrap: wrap;
+        width: 250px;
+        margin: auto;
+        padding: 5px;
+      }
+      .item {
+        margin: auto;
+        width: 115px;
+        height: 115px;
+        border-radius: 5px;
+      }
+      .item:hover {
+        background-color: #303030;
+        transition-duration: 0.01s;
+      }
+      .item p {
+        color: white;
+        font-size: 13px;
+        font-family: Microsoft JhengHei;
+        margin: 15px auto 0;
+        position: relative;
+        left: 32px;
+        top: 15px;
+      }
+      .item a {
+        display: inline-block;
+        width: 120px;
+        height: 120px;
+        text-decoration: none;
+      }
+      #youtube {
+        width: 25px;
+        position: relative;
+        left: 13px;
+        top: 16px;
+      }
+      #add {
+        width: 18px;
+        position: relative;
+        left: 16px;
+        top: 15px;
+      }
+      .image {
+        width: 50px;
+        height: 50px;
+        background-color: #2a2a2a;
+        border-radius: 50px;
+
+        position: relative;
+        left: 32px;
+        top: 15px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="logo">
+        <img src="./0606-01/google.png" alt="Google" />
+      </div>
+      <div class="input">
+        <img id="search" src="./0606-01/search.jpg" alt="搜尋Google" />
+        <input type="search" placeholder="搜尋 Google 或輸入網址" />
+        <a href="#"
+          ><img id="voice" src="./0606-01/voice.jpg" alt="語音搜尋" />
+        </a>
+      </div>
+
+      <div class="shortcut">
+        <div class="item">
+          <a href="#">
+            <div class="image">
+              <img id="youtube" src="./0606-01/youtube.png" alt="前往Youtube" />
+            </div>
+            <p>Youtube</p></a
+          >
+        </div>
+
+        <div class="item">
+          <a href="#">
+            <div class="image">
+              <img id="add" src="./0606-01/add.png" alt="新增捷徑" />
+            </div>
+            <p>新增捷徑</p></a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
