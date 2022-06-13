@@ -1,0 +1,118 @@
+.container {
+  width: 1200px;
+  margin: auto;
+  font-family: "Microsoft JhengHei";
+  font-size: 16px;
+  line-height: 1.5;
+}
+h2,
+h3 {
+  font-size: 36px;
+  font-weight: 700;
+}
+/* ================= */
+.introduce {
+  padding: 100px 0;
+}
+.introduce h2,
+.introduce p {
+  text-align: center;
+}
+.introduce p {
+  padding: 20px;
+}
+/* ================= */
+.service {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-bottom: 100px;
+}
+.service:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+.service + .service {
+  border-top: 1px solid lightgray;
+}
+
+.service .serve-text {
+  width: 50%;
+}
+.service .serve-text h3 {
+  padding: 20px 0;
+  border-bottom: 2px solid gray;
+}
+.service .serve-text p {
+  padding: 20px 0;
+}
+.service .serve-text a {
+  text-decoration: none;
+}
+.service .serve-text ul {
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.service .serve-text ul li {
+  display: inline-block;
+  width: 300px;
+  margin: 2px 0;
+}
+.service .serve-text ul li img {
+  height: 18px;
+  padding-right: 8px;
+  vertical-align: text-bottom;
+}
+
+.service .serve-img {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.service .serve-img img {
+  width: 100%;
+}
+/* ================= */
+.more {
+  width: 100%;
+  padding: 25px 0;
+  background-color: whitesmoke;
+}
+.more h2 {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.more ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5px;
+  justify-content: space-between;
+}
+.more ul li {
+  width: 300px;
+  margin-bottom: 75px;
+  text-align: center;
+}
+
+.more .serve-item .serve-item-img {
+  display: inline-block;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+.more .serve-item .serve-item-img img {
+  width: 72px;
+  position: absolute;
+  left: 25px;
+  top: 25px;
+}
+
+.more .serve-item h3 {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
