@@ -12,7 +12,7 @@ h3 {
 }
 /* ================= */
 .introduce {
-  padding: 100px 0;
+  padding-top: 100px;
 }
 .introduce h2,
 .introduce p {
@@ -26,9 +26,9 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  padding-bottom: 100px;
+  padding: 100px 0;
 }
-.service:nth-child(odd) {
+.service:nth-child(even) {
   flex-direction: row-reverse;
 }
 .service + .service {
@@ -92,17 +92,15 @@ h3 {
 .more ul li {
   width: 300px;
   margin-bottom: 75px;
-  text-align: center;
 }
 
 .more .serve-item .serve-item-img {
-  display: inline-block;
   position: relative;
   width: 120px;
   height: 120px;
   background-color: white;
   border-radius: 50%;
-  margin-bottom: 25px;
+  margin: 0 90px 25px 90px;
 }
 .more .serve-item .serve-item-img img {
   width: 72px;
