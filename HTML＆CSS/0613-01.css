@@ -1,14 +1,93 @@
-.container {
-  width: 1200px;
-  margin: auto;
+.header,
+.main,
+.more {
+  width: 100%;
   font-family: "Microsoft JhengHei";
   font-size: 16px;
   line-height: 1.5;
+}
+.container {
+  width: 1200px;
+  margin: auto;
 }
 h2,
 h3 {
   font-size: 36px;
   font-weight: 700;
+}
+/* ================= */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  opacity: 1;
+}
+body {
+  padding-top: 140px;
+}
+/* ================= */
+.tips {
+  height: 45px;
+  background-color: rgb(2, 14, 53);
+  display: flex;
+  align-items: center;
+}
+.tips nav {
+  position: absolute;
+  right: 140px;
+}
+.tips ul li {
+  display: inline-block;
+  margin: 1px 10px;
+}
+.tips ul li:first-child {
+  border-right: 1px solid white;
+  padding-right: 30px;
+}
+.tips ul li a {
+  color: white;
+  text-decoration: none;
+}
+/* ================= */
+.nav {
+  height: 95px;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  padding: 0 160px;
+}
+.nav a {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+}
+.nav .logo {
+  margin-right: 80px;
+}
+.nav .logo a {
+  padding: 30px 0;
+}
+.nav .logo img {
+  height: 30px;
+}
+.nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.nav ul li a {
+  padding: 35px 0;
+}
+.nav .try-btn {
+  border-radius: 30px;
+  background-color: rgb(16, 116, 246);
+  position: absolute;
+  right: 160px;
+}
+.nav .try-btn a {
+  display: inline-block;
+  padding: 8px 18px;
+  color: white;
 }
 /* ================= */
 .introduce {
@@ -74,7 +153,6 @@ h3 {
 }
 /* ================= */
 .more {
-  width: 100%;
   padding: 25px 0;
   background-color: whitesmoke;
 }
