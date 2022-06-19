@@ -175,22 +175,23 @@ footer {
 
 .banner .main-banner {
   background-image: url(https://ld-wp.template-help.com/monstroid1/prod-14924/wp-content/uploads/2018/02/slider1.jpg);
-  background-repeat: no-repeat;
-  padding: 140px 70px;
+  background-size: contain;
+  padding: 120px 70px;
 }
 .banner .main-banner .icon-sales {
   display: inline-block;
   font-size: 15px;
-  padding: 10px 15px;
+  padding: 8px 12px;
   color: rgb(255, 255, 255);
   background-color: rgb(29, 28, 33);
+  background-position: center;
 }
 
 .banner .main-banner h3 {
   font-size: 48px;
   font-weight: 700;
   color: rgb(29, 29, 29);
-  margin: 25px 0;
+  margin: 20px 0;
 }
 .banner .main-banner hr {
   width: 50px;
@@ -203,7 +204,7 @@ footer {
 .banner .main-banner > p {
   color: rgb(124, 124, 124);
   font-size: 16px;
-  margin-top: 40px;
+  margin-top: 30px;
   line-height: 1.5;
 }
 .banner .main-banner a p {
@@ -363,17 +364,17 @@ footer {
   margin-bottom: 25px;
 }
 /* ===main .accessory-shop */
-.accessory-shop .accessory-list{
+.accessory-shop .accessory-list {
   display: flex;
   margin-bottom: 30px;
 }
-.accessory-shop .accessory-list li{ 
+.accessory-shop .accessory-list li {
   width: 33%;
   padding: 30px 50px;
   background-position: center;
 }
 
-.accessory-shop .accessory-list a{ 
+.accessory-shop .accessory-list a {
   text-transform: uppercase;
   text-decoration: none;
   color: rgb(60, 60, 60);
@@ -384,38 +385,34 @@ footer {
   justify-content: center;
   text-align: center;
 }
-.accessory-shop .accessory-list h3{
+.accessory-shop .accessory-list h3 {
   font-size: 24px;
   padding: 15px 0;
   letter-spacing: 1px;
   width: 100%;
-  border-bottom: 3px solid rgba(255, 255, 255,0);
-  transition: .5s;
+  border-bottom: 3px solid rgba(255, 255, 255, 0);
+  transition: 0.5s;
 }
-.accessory-shop .accessory-list a:hover h3{
+.accessory-shop .accessory-list a:hover h3 {
   border-bottom: 3px solid rgb(255, 255, 255);
   position: relative;
-  top:-10px;
+  top: -10px;
 }
-.accessory-shop .accessory-list p{
+.accessory-shop .accessory-list p {
   font-size: 13px;
 }
-.accessory-shop .accessory-list li:nth-child(1)
-{
+.accessory-shop .accessory-list li:nth-child(1) {
   background-image: url(https://ld-wp.template-help.com/monstroid1/prod-14924/wp-content/uploads/2018/03/banner11.png);
 }
-.accessory-shop .accessory-list li:nth-child(2)
-{
+.accessory-shop .accessory-list li:nth-child(2) {
   background-image: url(https://ld-wp.template-help.com/monstroid1/prod-14924/wp-content/uploads/2018/03/banner12.png);
 }
-.accessory-shop .accessory-list li:nth-child(3)
-{
+.accessory-shop .accessory-list li:nth-child(3) {
   background-image: url(https://ld-wp.template-help.com/monstroid1/prod-14924/wp-content/uploads/2018/03/banner13.png);
 }
 
-
 /* ===main .popular=== */
-.popular .wrap{
+.popular .wrap {
   padding: 20px 0;
 }
 .popular .popular-list {
@@ -443,16 +440,16 @@ footer {
 }
 
 .popular .img-effect {
-  background-color: rgba(60,60,60, 0.3);
+  background-color: rgba(60, 60, 60, 0.3);
   width: 253px;
   height: 321px;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 0;
-  transition: .5s;
+  transition: 0.5s;
 }
-.popular .img-effect p{
+.popular .img-effect p {
   position: absolute;
   right: 10px;
   bottom: 15px;
@@ -462,12 +459,11 @@ footer {
   color: rgb(255, 255, 255);
 }
 .popular li:hover .img-effect,
-.popular li:hover .text-effect{
+.popular li:hover .text-effect {
   z-index: 2;
 }
 
-
-.popular .popular-text{
+.popular .popular-text {
   margin-bottom: 20px;
   position: relative;
   width: 253px;
@@ -498,22 +494,22 @@ footer {
 .popular .popular-text p.rank i.empty {
   color: rgb(211, 206, 210);
 }
-.popular .text-effect{
+.popular .text-effect {
   width: 253px;
   height: 110px;
   background-color: rgb(255, 255, 255);
-  position: absolute;  
-  top:0px;
+  position: absolute;
+  top: 0px;
   z-index: 0;
-  transition: .5s;
+  transition: 0.5s;
 }
-.popular .text-effect .shop-btn{
+.popular .text-effect .shop-btn {
   position: absolute;
   top: 10px;
 }
 
-.popular .special-tag{
-  background-color:rgb(254,191,1);
+.popular .special-tag {
+  background-color: rgb(254, 191, 1);
   color: rgb(255, 255, 255);
   padding: 3px 8px;
   font-size: 12px;
@@ -704,20 +700,20 @@ aside .about-column p {
   color: rgb(255, 180, 180);
 }
 /* ===footer .back-to-top */
-.back-to-top{
-  background-color: rgb(29,28,33);
+.back-to-top {
+  background-color: rgb(29, 28, 33);
   font-size: 12px;
   border-radius: 50%;
   position: fixed;
   right: 20px;
   bottom: 80px;
-  transition: .5s;
+  transition: 0.5s;
 }
-.back-to-top a{
+.back-to-top a {
   display: inline-block;
   color: rgb(255, 255, 255);
   padding: 15px;
 }
-.back-to-top:hover{
+.back-to-top:hover {
   background-color: rgb(255, 180, 180);
 }
