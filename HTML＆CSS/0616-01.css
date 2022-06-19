@@ -176,6 +176,7 @@ footer {
 .banner .main-banner {
   background-image: url(https://ld-wp.template-help.com/monstroid1/prod-14924/wp-content/uploads/2018/02/slider1.jpg);
   background-size: contain;
+  background-position: center;
   padding: 120px 70px;
   position: relative;
 }
@@ -226,19 +227,19 @@ footer {
   right: 5px;
   border: none;
 }
-.banner .main-banner aside li{
+.banner .main-banner aside li {
   margin: 25px 0;
 }
-.banner .main-banner aside a{
+.banner .main-banner aside a {
   color: rgb(124, 124, 124);
   font-size: 16px;
   padding-left: 20px;
   border-bottom: 2px solid transparent;
-  transition: .5s;
+  transition: 0.5s;
 }
-.banner .main-banner aside li:hover a{
+.banner .main-banner aside li:hover a {
   color: rgb(60, 60, 60);
-  border-bottom: 2px solid rgb(60,60,60);
+  border-bottom: 2px solid rgb(60, 60, 60);
 }
 
 .discount-info-list {
@@ -309,6 +310,7 @@ footer {
 }
 .shop .shop-item {
   margin: 20px 15px;
+  width: 22.5%;
 }
 .shop .shop-item h3 {
   font-size: 16px;
@@ -358,11 +360,13 @@ footer {
   display: flex;
   padding: 70px 0;
 }
+.special-shop .shop-img,
+.special-shop .shop-text{
+  width: 39.5%;
+}
 
 .special-shop .shop-img {
   padding: 45px 45px 0 0;
-  flex-basis: 500px;
-  flex-shrink: 0;
 }
 .special-shop .shop-img img {
   width: 100%;
