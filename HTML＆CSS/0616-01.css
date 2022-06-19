@@ -177,6 +177,7 @@ footer {
   background-image: url(https://ld-wp.template-help.com/monstroid1/prod-14924/wp-content/uploads/2018/02/slider1.jpg);
   background-size: contain;
   padding: 120px 70px;
+  position: relative;
 }
 .banner .main-banner .icon-sales {
   display: inline-block;
@@ -217,6 +218,27 @@ footer {
 }
 .banner .main-banner a p:hover {
   color: rgb(255, 180, 180);
+}
+
+.banner .main-banner aside {
+  position: absolute;
+  top: 30%;
+  right: 5px;
+  border: none;
+}
+.banner .main-banner aside li{
+  margin: 25px 0;
+}
+.banner .main-banner aside a{
+  color: rgb(124, 124, 124);
+  font-size: 16px;
+  padding-left: 20px;
+  border-bottom: 2px solid transparent;
+  transition: .5s;
+}
+.banner .main-banner aside li:hover a{
+  color: rgb(60, 60, 60);
+  border-bottom: 2px solid rgb(60,60,60);
 }
 
 .discount-info-list {
@@ -441,13 +463,18 @@ footer {
 
 .popular .img-effect {
   background-color: rgba(60, 60, 60, 0.3);
-  width: 253px;
-  height: 321px;
+  width: 100%;
+  height: 98.5%;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 0;
   transition: 0.5s;
+}
+.popular .img-effect > a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
 }
 .popular .img-effect p {
   position: absolute;
@@ -458,16 +485,18 @@ footer {
   padding: 5px;
   color: rgb(255, 255, 255);
 }
-.popular li:hover .img-effect,
+.popular li:hover .img-effect {
+  z-index: 3;
+}
 .popular li:hover .text-effect {
-  z-index: 2;
+  z-index: 3;
 }
 
 .popular .popular-text {
   margin-bottom: 20px;
   position: relative;
-  width: 253px;
-  height: 110px;
+  width: 100%;
+  height: 100%;
   background-color: rgb(255, 255, 255);
   z-index: 1;
 }
@@ -495,8 +524,8 @@ footer {
   color: rgb(211, 206, 210);
 }
 .popular .text-effect {
-  width: 253px;
-  height: 110px;
+  width: 100%;
+  height: 100%;
   background-color: rgb(255, 255, 255);
   position: absolute;
   top: 0px;
