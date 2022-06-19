@@ -307,6 +307,7 @@ footer {
 .shop .shop-list {
   display: flex;
   margin: 0 -15px;
+  width: 100%;
 }
 .shop .shop-item {
   margin: 20px 15px;
@@ -444,6 +445,7 @@ footer {
 .popular .popular-list {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
   align-items: stretch;
 }
 .popular .popular-list li {
