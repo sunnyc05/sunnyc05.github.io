@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 載入通用設定 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8b9cdc6b98.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS樣式設定 -->
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="0616-01.css" />
+  </head>
+  <body>
+    <header>
+      <div class="login-bar">
+        <div class="wrap">
+          <div class="login-bar-contact">
+            <p id="tel">Call us: <a href="#">+3(800) 2345-6789</a></p>
+            <p>7 Days a week from 9:00 am to 7:00 pm</p>
+          </div>
+          <div class="login-bar-shop">
+            <p class="shop-hover-style">
+              USD, $<i class="fa-solid fa-chevron-down"></i>
+            </p>
+            <i class="fa-solid fa-cart-shopping shop-hover-style">
+              <div id="cart-count"><p>0</p></div>
+            </i>
+            <a href="#" class="shop-hover-style">Login</a>
+            <input type="search" placeholder="Search..." />
+            <a href="#" id="do-search"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!-- login-bar / nav-bar -->
+      <div class="nav-bar">
+        <div class="wrap">
+          <div class="logo">
+            <a href="#"
+              ><img
+                src="https://ld-wp.template-help.com/monstroid1/prod-14924/wp-content/themes/variegated/assets/images/logo.png"
+                alt="VARIEGATED"
+              />
+              <h1>VARIEGATED</h1>
+            </a>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li>
+                <a href="#">FEATURES<i class="fa-solid fa-chevron-down"></i></a>
+              </li>
+              <li>
+                <a href="#">BLOG<i class="fa-solid fa-chevron-down"></i></a>
+              </li>
+              <li>
+                <a href="#">SHOP<i class="fa-solid fa-chevron-down"></i></a>
+              </li>
+              <li><a href="#">CONTACTS</a></li>
+            </ul>
+          </nav>
+          <ul class="sns-list">
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-google"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- ============ -->
+    <main>
+      <section class="banner">
+        <div class="wrap">
+          <div class="main-banner">
+            <div class="icon-sales">-20% SALE</div>
+            <h3>
+              Be a Cherry on Pie<br />
+              in Any Situation
+            </h3>
+            <hr />
+            <p>
+              Experiment, mix and showcase colors, textures and styles!<br />
+              Be yourself and impress others!
+            </p>
+            <a href="#"
+              ><p><i class="fa-solid fa-arrow-right"></i>　Read More</p></a
+            >
+          </div>
+          <ul class="discount-info-list">
+            <li class="discount-info-item">
+              <h4>Free standard delivery</h4>
+              <p>on order over $49</p>
+            </li>
+            <li class="discount-info-item">
+              <h4>30% OFF 100’S PANTYS</h4>
+              <p>use code: pantyup 30</p>
+            </li>
+            <li class="discount-info-item">
+              <h4>20% STUDENT DISCOUNT PLUS</h4>
+              <p>free next day delivey, excludes sale.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="shop">
+        <div class="wrap">
+          <h2>Shop categories</h2>
+          <div class="shop-list-manage">
+            <i class="fa-solid fa-chevron-left"></i>
+            <ul class="shop-list">
+              <li class="shop-item">
+                <a href="#">
+                  <img
+                    src="https://ld-wp.template-help.com/monstroid1/prod-14924/wp-content/uploads/2018/02/cat5-275x376.jpg"
+                    alt="blazers"
+                  />
+                  <h3>blazers</h3>
+                </a>
+              </li>
+              <li class="shop-item">
+                <a href="#">
+                  <img
+                    src="https://ld-wp.template-help.com/monstroid1/prod-14924/wp-content/uploads/2018/02/cat4-275x376.jpg"
+                    alt="dresses"
+                  />
+                  <h3>dresses</h3>
+                </a>
+              </li>
+              <li class="shop-item">
+                <a href="#">
+                  <img
+                    src="https://ld-wp.template-help.com/monstroid1/prod-14924/wp-content/uploads/2018/02/cat3-275x376.jpg"
+                    alt="jumpsuies"
+                  />
+                  <h3>jumpsuies</h3>
+                </a>
+              </li>
+              <li class="shop-item">
+                <a href="#">
+                  <img
+                    src="https://ld-wp.template-help.com/monstroid1/prod-14924/wp-content/uploads/2018/02/cat2-275x376.jpg"
+                    alt="new arrival"
+                  />
+                  <h3>new arrival</h3>
+                </a>
+              </li>
+            </ul>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+      </section>
+      <section class="special-shop">
+        <div class="wrap">
+          <div class="shop-img">
+            <img
+              src="https://ld-wp.template-help.com/monstroid1/prod-14924/wp-content/uploads/2018/02/image.jpg"
+              alt="favourite blouses"
+            />
+          </div>
+          <div class="shop-text">
+            <h3>favourite blouses</h3>
+            <p>
+              Our new favourite blouses are defined by great all-over patterns
+              and special details. Our new favourite blouses are defined by
+              great all-over patterns and special details.
+            </p>
+            <a href="#" class="shop-btn"><p>SHOP NOW</p></a>
+          </div>
+        </div>
+      </section>
+      <section class="accessory-shop">
+        <ul class="accessory-list">
+          <li>
+              <a href="#">
+                <h3>leather belt</h3>
+                <p>Our whole range of cotton, woolen and<br>leather wristbands</p>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                <h3>leather bags</h3>
+                <p>All of our leather made card holders <br>come now at a greatly reduced price.</p>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                <h3>sunglasses</h3>
+                <p>Buy a brand new, handmade leather belt<br> today and get a 15% discount!</p>
+              </a>
+          </li>
+        </ul>
+      </section>
+      <section class="popular">
+        <div class="wrap">
+          <h2>Most Recent Popular Models</h2>
+          <ul class="popular-list">
+            <li>
+              <div class="control-img-effect">
+                <div class="popular-img">
+                  <img
+                    src="https://ld-wp.template-help.com/monstroid1/prod-14924/wp-content/uploads/2018/02/Buttoned-shirt_2-370x470.jpg"
+                    alt="buttoned shirt"
+                  />
+                </div>
+                  <div class="img-effect">
+                    <p>
+                      <a href="#"
+                        ><i class="fa-solid fa-heart" title="Add to Wishlist"></i
+                      ></a>
+                      <a href="#"
+                        ><i
+                          class="fa-solid fa-scale-balanced"
+                          title="Add to Compare"
+                        ></i
+                      ></a>
+                      <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </p>
+                  </div> 
+              </div>
+              <div class="control-text-effect">
+                <div class="popular-text">
+                  <p>blazers jumpsuits</p>
+                  <h3>buttoned shirt</h3>
+                  <p class="price">59.00$</p>
+                </div>
+                <div class="text-effect">
+                  <a href="#" class="shop-btn"><p>select options</p></a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="control-img-effect">
+                <div class="popular-img">
+                  <img
+                    src="https://ld-wp.template-help.com/monstroid1/prod-14924/wp-content/uploads/2018/02/Checked-tunic_1-370x470.jpg"
+                    alt="checked tunic"
+                  />
+                </div>
+                <div class="img-effect">
+                  <p>
+                    <a href="#"
+                      ><i class="fa-solid fa-heart" title="Add to Wishlist"></i
+                    ></a>
+                    <a href="#"
+                      ><i
+                        class="fa-solid fa-scale-balanced"
+                        title="Add to Compare"
+                      ></i
+                    ></a>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                  </p>
+                </div>
+              </div>
+              <div class="control-text-effect">
+                <div class="popular-text">
+                  <p>trousers-shorts blazers dresses</p>
+                  <h3>checked tunic</h3>
+                  <p class="price">69.00$</p>
+                </div>
+                <div class="text-effect">
+                  <a href="#" class="shop-btn"><p>add to cart</p></a>
+                </div>
+              </div>
+              <div class="special-tag">Featured</div>
+            </li>
+            <li>
+              <div class="control-img-effect">
+                <div class="popular-img">
+                  <img
+                    src="https://ld-wp.template-help.com/monstroid1/prod-14924/wp-content/uploads/2018/02/Embroidered-shirt_1-370x470.jpg"
+                    alt="embroidered shirt"
+                  />
+                </div>
+                <div class="img-effect">
+                  <p>
+                    <a href="#"
+                      ><i class="fa-solid fa-heart" title="Add to Wishlist"></i
+                    ></a>
+                    <a href="#"
+                      ><i
+                        class="fa-solid fa-scale-balanced"
+                        title="Add to Compare"
+                      ></i
+                    ></a>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                  </p>
+                </div>
+              </div>
+              <div class="control-text-effect">
+                <div class="popular-text">
+                  <p>trousers-shorts blazers dresses</p>
+                  <h3>embroidered shirt</h3>
+                  <p class="price">36.00$</p>
+                </div>
+                <div class="text-effect">
+                  <a href="#" class="shop-btn"><p>add to cart</p></a>
+                </div>
+              </div>
+              <div class="special-tag">Featured</div>
+            </li>
+            <li>
+              <div class="control-img-effect">
+                <div class="popular-img">
+                  <img
+                    src="https://ld-wp.template-help.com/monstroid1/prod-14924/wp-content/uploads/2018/02/Faux-leather-jacket-with-flowing-lapels_1-370x470.jpg"
+                    alt="faux leather jacket with flowing lapels"
+                  />
+                </div>
+                <div class="img-effect">
+                  <p>
+                    <a href="#"
+                      ><i class="fa-solid fa-heart" title="Add to Wishlist"></i
+                    ></a>
+                    <a href="#"
+                      ><i
+                        class="fa-solid fa-scale-balanced"
+                        title="Add to Compare"
+                      ></i
+                    ></a>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                  </p>
+                </div>
+              </div>
+              <div class="control-text-effect">
+                <div class="popular-text">
+                  <p>trousers-shorts blazers new arrival</p>
+                  <h3>faux leather jacket with flowing lapels</h3>
+                  <p class="price">96.00$$</p>
+                  <p class="rank">
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star empty"></i>
+                  </p>
+                </div>
+                <div class="text-effect">
+                  <a href="#" class="shop-btn"><p>add to cart</p></a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="control-img-effect">
+                <div class="popular-img">
+                  <img
+                    src="https://ld-wp.template-help.com/monstroid1/prod-14924/wp-content/uploads/2018/02/Lightweight-puffer-jacket_2-370x470.jpg"
+                    alt="lightweight puffer jacket"
+                  />
+                </div>
+                <div class="img-effect">
+                  <p>
+                    <a href="#"
+                      ><i class="fa-solid fa-heart" title="Add to Wishlist"></i
+                    ></a>
+                    <a href="#"
+                      ><i
+                        class="fa-solid fa-scale-balanced"
+                        title="Add to Compare"
+                      ></i
+                    ></a>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                  </p>
+                </div>
+              </div>
+              <div class="control-text-effect">
+                <div class="popular-text">
+                  <p>trousers-shorts dresses jumpsuits</p>
+                  <h3>lightweight puffer jacket</h3>
+                  <p class="price">54.00$</p>
+                </div>
+                <div class="text-effect">
+                  <a href="#" class="shop-btn"><p>select options</p></a>
+                </div>
+              </div>
+              <div class="special-tag">Featured</div>
+            </li>
+            <li>
+              <div class="control-img-effect">
+                <div class="popular-img">
+                  <img
+                    src="https://ld-wp.template-help.com/monstroid1/prod-14924/wp-content/uploads/2018/02/Polka-dot-shirt-dress_2-370x470.jpg"
+                    alt="polka shirt dress"
+                  />
+                </div>
+                <div class="img-effect">
+                  <p>
+                    <a href="#"
+                      ><i class="fa-solid fa-heart" title="Add to Wishlist"></i
+                    ></a>
+                    <a href="#"
+                      ><i
+                        class="fa-solid fa-scale-balanced"
+                        title="Add to Compare"
+                      ></i
+                    ></a>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                  </p>
+                </div>
+              </div>
+              <div class="control-text-effect">
+                <div class="popular-text">
+                  <p>trousers-shorts dresses</p>
+                  <h3>polka shirt dress</h3>
+                  <p class="price">66.00$</p>
+                  <p class="rank">
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star empty"></i
+                    ><i class="fa-solid fa-star empty"></i
+                    ><i class="fa-solid fa-star empty"></i>
+                  </p>
+                </div>
+                <div class="text-effect">
+                  <a href="#" class="shop-btn"><p>add to cart</p></a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="control-img-effect">
+                <div class="popular-img">
+                  <img
+                    src="https://ld-wp.template-help.com/monstroid1/prod-14924/wp-content/uploads/2018/02/Ripped-denim-jacket_2-370x470.jpg"
+                    alt="ripped denim jacket"
+                  />
+                </div>
+                <div class="img-effect">
+                  <p>
+                    <a href="#"
+                      ><i class="fa-solid fa-heart" title="Add to Wishlist"></i
+                    ></a>
+                    <a href="#"
+                      ><i
+                        class="fa-solid fa-scale-balanced"
+                        title="Add to Compare"
+                      ></i
+                    ></a>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                  </p>
+                </div>
+              </div>
+              <div class="control-text-effect">
+                <div class="popular-text">
+                  <p>trousers-shorts dresses jumpsuits</p>
+                  <h3>ripped denim jacket</h3>
+                  <p class="price">35.00$</p>
+                </div>
+                <div class="text-effect">
+                  <a href="#" class="shop-btn"><p>select options</p></a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="control-img-effect">
+                <div class="popular-img">
+                  <img
+                    src="https://ld-wp.template-help.com/monstroid1/prod-14924/wp-content/uploads/2018/02/Suede-effect-dress_1-370x470.jpg"
+                    alt="suede effect dress"
+                  />
+                </div>
+                <div class="img-effect">
+                  <p>
+                    <a href="#"
+                      ><i class="fa-solid fa-heart" title="Add to Wishlist"></i
+                    ></a>
+                    <a href="#"
+                      ><i
+                        class="fa-solid fa-scale-balanced"
+                        title="Add to Compare"
+                      ></i
+                    ></a>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                  </p>
+                </div>
+              </div>
+              <div class="control-text-effect">
+                <div class="popular-text">
+                  <p>trousers-shorts dresses jumpsuits</p>
+                  <h3>suede effect dress</h3>
+                  <p class="price">89.00$</p>
+                  <p class="rank">
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star empty"></i
+                    ><i class="fa-solid fa-star empty"></i>
+                  </p>
+                </div>
+                <div class="text-effect">
+                  <a href="#" class="shop-btn"><p>add to cart</p></a>
+                </div>
+              </div>
+              <div class="special-tag">Featured</div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="essential">
+        <div class="wrap">
+          <p>dealy deals</p>
+          <h3>modern casual <br />essentials</h3>
+          <a href="#" class="shop-btn"><p>SHOP NOW</p></a>
+        </div>
+      </section>
+      <section class="blog">
+        <div class="wrap">
+          <h2>Latest from blog</h2>
+          <ul class="post-list">
+            <li>
+              <div class="post-img">
+                <a href="#">
+                  <img
+                    src="https://ld-wp.template-help.com/monstroid1/prod-14924/wp-content/uploads/2018/02/image11-565x382.jpg"
+                    alt="when in doubt, wear rose pumps"
+                  />
+                </a>
+              </div>
+              <div class="post-text">
+                <a href="#">
+                  <h3>when in doubt, wear rose pumps</h3>
+                </a>
+                <p>
+                  It’s always a good idea to invest in a good pair of nude
+                  pumps. It’s a timeless wardrobe staple just…
+                </p>
+                <div class="date-info">
+                  <p><a href="#">22 February, 2018</a></p>
+                  <p>post by <a href="#">admin</a></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="post-img">
+                <a href="#">
+                  <img
+                    src="https://ld-wp.template-help.com/monstroid1/prod-14924/wp-content/uploads/2018/02/image12-565x382.jpg"
+                    alt="hem your pants for a shoe height"
+                  />
+                </a>
+              </div>
+              <div class="post-text">
+                <a href="#">
+                  <h3>hem your pants for a shoe height</h3>
+                </a>
+                <p>
+                  A mistake many people make is wearing pants (or dresses) that
+                  are too long or too short for their shoes…
+                </p>
+                <div class="date-info">
+                  <p><a href="#">22 February, 2018</a></p>
+                  <p>post by <a href="#">admin</a></p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="info-collect">
+        <div class="wrap">
+          <div class="entry">
+            <label><h3>Get the latest news delivered daily!</h3></label>
+            <input type="email" placeholder="Enter please your email" />
+            <a href="#" class="shop-btn"><p>subscribe</p></a>
+          </div>
+          <h3>@instagram</h3>
+        </div>
+      </section>
+    </main>
+    <!-- ============ -->
+    <footer>
+      <aside>
+        <div class="wrap">
+          <div class="list-column">
+            <h3>Categories</h3>
+            <ul>
+              <li><a href="#">Help & Contact Us</a></li>
+              <li><a href="#">Returns & Refunds</a></li>
+              <li><a href="#">Online Stores</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="list-column">
+            <h3>Our store</h3>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Contacts</a></li>
+            </ul>
+          </div>
+          <div class="list-column">
+            <h3>Profile</h3>
+            <ul>
+              <li><a href="#">Checkout</a></li>
+              <li><a href="#">My account</a></li>
+              <li><a href="#">Order tracking</a></li>
+              <li><a href="#">Help & support</a></li>
+            </ul>
+          </div>
+          <div class="about-column">
+            <h3>About us</h3>
+            <p>
+              Variegated is the place where everyone can is able to find some
+              clothing called to highlight one’s individuality! We are waiting
+              right for you!
+            </p>
+          </div>
+        </div>
+      </aside>
+      <div class="copyright">
+        <div class="wrap">
+          <p>&copy; 2022 Variegated. All Rights Reserved.</p>
+          <ul class="sns-list">
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-google"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="back-to-top">
+        <a href="#"><i class="fa-solid fa-angle-up"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>
