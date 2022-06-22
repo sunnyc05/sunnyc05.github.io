@@ -1,0 +1,232 @@
+$image-color: #bb0404;
+/* =================== */
+.wrap {
+  margin: auto;
+  font-family: "Microsoft JhengHei";
+  font-size: 14px;
+  line-height: 1.5;
+  .column {
+    border: 1px solid blue;
+    padding: 40px 12%;
+    .main {
+      h1,
+      h2,
+      p {
+        color: #ffffff;
+        letter-spacing: 1px;
+      }
+      // counter-reset: item-count 0;
+      h1 {
+        font-size: 36px;
+        background-color: $image-color;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 0%;
+        padding-top: 3%;
+        // &::before {
+        //   content: "0"counter(item-count);
+        //   counter-increment: (item-count) 1;
+        // }
+        p {
+          font-size: 66px;
+          font-weight: 100;
+          letter-spacing: -1px;
+          transform: rotate(90deg);
+          margin: -5% 3% -3% -1%;
+        }
+      }
+      h2,
+      & > p {
+        background-color: #000000;
+      }
+      h2 {
+        padding: 3% 4% 0;
+        font-size: 16px;
+      }
+      & > p {
+        padding: 0 4% 3%;
+        font-weight: 100;
+        font-size: 12px;
+      }
+    }
+    .img {
+      position: relative;
+
+      :nth-child(1) {
+        width: 100%;
+        vertical-align: bottom;
+      }
+      :nth-child(2) {
+        width: 11%;
+        position: absolute;
+        top: 40%;
+        right: -3%;
+      }
+    }
+    .detail {
+      background-color: #eeeeee;
+      padding: 3%;
+      h2 {
+        color: $image-color;
+        font-weight: 700;
+        margin-bottom: 2%;
+        display: flex;
+        align-items: center;
+
+        &::after {
+          content: "";
+          height: 1px;
+          flex-grow: 1;
+          background-color: $image-color;
+          margin-left: 2%;
+        }
+      }
+      h3 {
+        display: inline-block;
+        background-color: #000000;
+        color: #ffffff;
+        padding: 0 5px;
+        font-size: 13px;
+      }
+      p {
+        font-size: 12px;
+        margin: 2% 0;
+        display: flex;
+
+        &::before {
+          content: "．";
+          color: $image-color;
+          font-weight: 900;
+        }
+      }
+    }
+  }
+}
+/* =================== */
+@media screen and (min-width: 768px) {
+  .wrap {
+    .column {
+      display: flex;
+      position: relative;
+      font-size: 24px;
+      .main {
+        width: 80%;
+        position: relative;
+        left: -3%;
+        bottom: -3%;
+        z-index: 1;
+        h1 {
+          font-size: 60px;
+          p {
+            font-size: 108px;
+          }
+        }
+        h2 {
+          font-size: 24px;
+          font-weight: 700;
+        }
+        p {
+          font-size: 20px;
+        }
+      }
+      .img {
+        .shadow {
+          background-color: #f5f5f5;
+          width: 20%;
+          height: 150px;
+          position: absolute;
+          top: -150px;
+          right: 5%;
+          z-index: -1;
+        }
+      }
+      .detail {
+        h3 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+/* =================== */
+@media screen and (min-width: 992px) {
+  .wrap {
+    .column {
+      padding: 30px 250px;
+
+      .main {
+        width: 340px;
+        left: -200px;
+        bottom: -251px;
+        margin-top: -201px;
+        h1 {
+          font-size: 52px;
+          height: 120px;
+          padding-top: 15px;
+          p {
+            font-size: 114px;
+            margin: -25px 0 -15px -10px;
+          }
+        }
+        h2 {
+          padding: 15px 20px 5px 20px;
+        }
+        & > p {
+          height: 180px;
+          padding: 0 20px 15px 20px;
+        }
+      }
+      &:nth-child(even) .main h1 {
+        flex-direction: row-reverse;
+        p {
+          margin: -25px -15px -15px 0;
+        }
+      }
+
+      .img {
+        width: 700px;
+
+        .shadow {
+          width: 440px;
+          height: 290px;
+          top: -100px;
+          right: -35px;
+        }
+        :nth-child(1) {
+          position: relative;
+          left: -50px;
+        }
+        :nth-child(2) {
+          width: 60px;
+          right: 40px;
+        }
+      }
+      .detail {
+        width: 660px;
+        padding: 20px;
+        position: relative;
+        top: -30px;
+        left: -150px;
+        h2 {
+          font-size: 18px;
+          margin-bottom: 0;
+        }
+        h3,
+        p {
+          font-size: 16px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+/* =================== */
+@media screen and (min-width: 1200px) {
+  .wrap {
+    max-width: 1200px;
+  }
+}
