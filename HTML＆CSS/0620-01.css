@@ -7,7 +7,6 @@
   line-height: 1.5;
 }
 .wrap .column {
-  border: 1px solid blue;
   padding: 40px 12%;
 }
 .wrap .column .main h1,
@@ -138,6 +137,9 @@
 }
 /* =================== */
 @media screen and (min-width: 992px) {
+  .wrap {
+    max-width: 992px;
+  }
   .wrap .column {
     padding: 30px 250px;
   }
@@ -201,11 +203,5 @@
 .wrap .column .detail p {
     font-size: 16px;
     margin: 0;
-  }
-}
-/* =================== */
-@media screen and (min-width: 1200px) {
-  .wrap {
-    max-width: 1200px;
   }
 }/*# sourceMappingURL=0620-01.css.map */

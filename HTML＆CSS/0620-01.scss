@@ -6,7 +6,6 @@ $image-color: #bb0404;
   font-size: 14px;
   line-height: 1.5;
   .column {
-    border: 1px solid blue;
     padding: 40px 12%;
     .main {
       h1,
@@ -155,6 +154,7 @@ $image-color: #bb0404;
 /* =================== */
 @media screen and (min-width: 992px) {
   .wrap {
+    max-width: 992px;
     .column {
       padding: 30px 250px;
 
@@ -222,11 +222,5 @@ $image-color: #bb0404;
         }
       }
     }
-  }
-}
-/* =================== */
-@media screen and (min-width: 1200px) {
-  .wrap {
-    max-width: 1200px;
   }
 }
