@@ -185,13 +185,6 @@ $image-color: #bb0404;
           padding: 0 20px 15px 20px;
         }
       }
-      &:nth-child(even) .main h2 {
-        flex-direction: row-reverse;
-        p {
-          margin: -25px -15px -15px 0;
-        }
-      }
-
       .img {
         width: 700px;
 
@@ -224,6 +217,35 @@ $image-color: #bb0404;
         p {
           font-size: 16px;
           margin: 0;
+        }
+      }
+      &:nth-child(even) {
+        .main {
+          left: 450px;
+
+          h2 {
+            flex-direction: row-reverse;
+            p {
+              margin: -25px -15px -15px 0;
+            }
+          }
+        }
+        .img {
+          .shadow {
+            width: 500px;
+            height: 400px;
+            top: -70px;
+            right: 100px;
+          }
+          :nth-child(1) {
+            left: -200px;
+          }
+          :nth-child(2) {
+            right: 850px;
+          }
+        }
+        .detail {
+          left: 50px;
         }
       }
     }
