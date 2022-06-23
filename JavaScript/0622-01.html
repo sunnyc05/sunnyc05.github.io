@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrap {
+        width: 840px;
+        margin: auto;
+        padding: 10px;
+        border: 10px ridge #005caf;
+      }
+      section {
+        height: 300px;
+        border: 1px solid #a5dee4;
+      }
+      .main-img {
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      .main-img img {
+        width: 100%;
+        vertical-align: bottom;
+      }
+      .profile {
+        padding: 40pt 10px;
+        box-sizing: border-box;
+        font-size: 18px;
+        font-family: "Microsoft JhengHei";
+      }
+
+      .prefer-img {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .prefer-img img {
+        width: 100%;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <section class="main-img"><img src="" alt="" /></section>
+      <section class="profile">
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+      </section>
+      <section class="prefer-img">
+        <div class="imgs-col"><img src="" alt="" /></div>
+        <div class="imgs-col"><img src="" alt="" /></div>
+        <div class="imgs-col"><img src="" alt="" /></div>
+      </section>
+
+      <script>
+        let mainImgcol = document.querySelector(".main-img img");
+        mainImgcol.setAttribute(
+          "src",
+          "https://cdn11.bigcommerce.com/s-4bd92/images/stencil/original/carousel/18/banner-bg__94881.jpg"
+        );
+
+        let profile = {
+          name: "Sunny Cheng",
+          email: "sunny.test@gmail.com",
+          school: "Build School",
+          prefer: "貓、拉麵",
+        };
+
+        let nameCol = document.querySelector(".profile p:nth-child(1)");
+        nameCol.innerText = `姓名：${profile.name}`;
+        let mailCol = document.querySelector(".profile p:nth-child(2)");
+        mailCol.innerText = `email：${profile.email}`;
+        let schCol = document.querySelector(".profile p:nth-child(3)");
+        schCol.innerText = `學校：${profile.school}`;
+        let preCol = document.querySelector(".profile p:nth-child(4)");
+        preCol.innerText = `喜好：${profile.prefer}`;
+
+        let preImgArr = [
+          "https://scontent.ftpe8-2.fna.fbcdn.net/v/t39.30808-6/278847506_3241478249511252_8671970917551726919_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=0debeb&_nc_ohc=wLEViJRxQ6oAX8mEz6T&_nc_ht=scontent.ftpe8-2.fna&oh=00_AT8Hs8Ldl1XktpAL860Xxtme8t53bMtdTrxW3IU2bf1DOg&oe=62B8CCBB",
+          "https://scontent.ftpe8-3.fna.fbcdn.net/v/t39.30808-6/279899744_3259195284406215_5293189606829575457_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=0debeb&_nc_ohc=gsF0-VSpF0oAX_n4gwN&_nc_ht=scontent.ftpe8-3.fna&oh=00_AT8JqkrKX9ZkVWYmHzTSTwhD_241UeMvQo2qyS3Rr2267Q&oe=62B9AA16",
+          "https://scontent.ftpe8-3.fna.fbcdn.net/v/t39.30808-6/287573133_3290310651294678_3960842273897636097_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0debeb&_nc_ohc=Ge93AmIpobEAX8Iul7Y&_nc_oc=AQnSGRXdF3DQyibc7QnbMjZpeQ90EjStg5SO2OVnO5jmrERQt9awKGVhj2dTJXn7q9w&_nc_ht=scontent.ftpe8-3.fna&oh=00_AT-Apv9sRfyhQQW6s8oxaVxv22GgB3ybBuma36jtVo1Ghg&oe=62B8F60E",
+        ];
+
+        let preImgCol = document.querySelectorAll(".prefer-img img");
+        preImgCol.forEach((imgCol, index) => {
+          imgCol.setAttribute("src", preImgArr[index]);
+        });
+      </script>
+    </div>
+  </body>
+</html>

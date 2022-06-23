@@ -5,43 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./HTML＆CSS/reset.css">
     <style>
-      * {
-        margin: 0;
-        padding: 0;
+      body{
+        line-height: 1.5;
+        font-size: 18px;
+        font-family: "Microsoft JhengHei";
       }
-      div {
-        margin: 10px;
-      }
-      p {
-        margin: 5px;
-      }
-      ul {
-        padding: 5px 20px;
-      }
-      li {
-        margin: 5px;
-      }
+.wrap{
+  width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #FCFAF2;
+
+}
+.title{
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom:  5px solid #724938;
+  color: #724938;
+}
+.title h1{
+  font-size: 52px;
+  font-weight: 700;
+}
+.title p{
+  font-weight: 700;
+}
+
+section.course{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+.course div{
+  border: 1px solid;
+  padding: 5px 10px;
+}
+.course a{
+  display: inline-block;
+  padding: 5px;
+  text-decoration: none;
+  color: #000000;
+  border-radius: 10px;
+  transition: .3s
+}
+.course a:hover{
+background-color: #58B2DC;
+color: #FFFFFB;
+
+}
+.course h2{
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.course ul{
+  padding-left: 25px;
+  list-style:disc;
+}
+
     </style>
   </head>
   <body>
-    <div>
-      <h1>Build School　前端作業</h1>
-      <h2>鄭宇晴</h2>
+    <div class="wrap">
+      <div class="title">
+        <h1>Build School 前端作業</h1>
+        <p>鄭宇晴</p>
+      </div>
+      <section class="course">
+        <div class="html-css">
+          <h2>HTML ＆ CSS</h2>
+          <ul>
+            <li>05/30作業：<a href="./HTML＆CSS/0530-01.html">課表</a></li>
+            <li>
+              06/06作業：<a href="./HTML＆CSS/0606-01.html">Google首頁切版</a>
+            </li>
+            <li>06/06作業：<a href="./HTML＆CSS/0606-02.html">蝦皮網頁切版</a></li>
+          </li>
+          <li>06/13作業：<a href="./HTML＆CSS/0613-01.html">SHOPLINE切版</a></li>
+          <li>06/16作業：<a href="./HTML＆CSS/0616-01.html">Variegated切版</a></li>
+          <li>06/20作業：<a href="./HTML＆CSS/0620-01.html">TOYOTA切版</a></li>
+          </ul>
+        </div>
+        <div class="javascript">
+          <h2>JavaScript</h2>
+          <ul>
+            <li>06/22作業：<a href="./JavaScript/0622-01.html">個人profile</a></li>
+          </ul>
+        </div>
+      </section>
     </div>
 
-    <div>
-      <ul>
-        <li>05/30作業：<a href="./HTML＆CSS/0530-01.html">課表</a></li>
-        <li>
-          06/06作業：<a href="./HTML＆CSS/0606-01.html">Google首頁切版</a>
-        </li>
-        <li>06/06作業：<a href="./HTML＆CSS/0606-02.html">蝦皮網頁切版</a></li>
-      </li>
-      <li>06/13作業：<a href="./HTML＆CSS/0613-01.html">SHOPLINE切版</a></li>
-      <li>06/16作業：<a href="./HTML＆CSS/0616-01.html">Variegated切版</a></li>
-      <li>06/20作業：<a href="./HTML＆CSS/0620-01.html">TOYOTA切版</a></li>
-      </ul>
-    </div>
   </body>
 </html>
