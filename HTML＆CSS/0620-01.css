@@ -6,16 +6,21 @@
   font-size: 14px;
   line-height: 1.5;
 }
+.wrap h1 {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
 .wrap .column {
   padding: 40px 12%;
 }
-.wrap .column .main h1,
 .wrap .column .main h2,
+.wrap .column .main h3,
 .wrap .column .main p {
   color: #ffffff;
   letter-spacing: 1px;
 }
-.wrap .column .main h1 {
+.wrap .column .main h2 {
   font-size: 36px;
   background-color: #bb0404;
   display: flex;
@@ -24,17 +29,17 @@
   margin-bottom: 0%;
   padding-top: 3%;
 }
-.wrap .column .main h1 p {
+.wrap .column .main h2 p {
   font-size: 66px;
   font-weight: 100;
   letter-spacing: -1px;
   transform: rotate(90deg);
   margin: -5% 3% -3% -1%;
 }
-.wrap .column .main h2, .wrap .column .main > p {
+.wrap .column .main h3, .wrap .column .main > p {
   background-color: #000000;
 }
-.wrap .column .main h2 {
+.wrap .column .main h3 {
   padding: 3% 4% 0;
   font-size: 16px;
 }
@@ -60,21 +65,21 @@
   background-color: #eeeeee;
   padding: 3%;
 }
-.wrap .column .detail h2 {
+.wrap .column .detail h3 {
   color: #bb0404;
   font-weight: 700;
   margin-bottom: 2%;
   display: flex;
   align-items: center;
 }
-.wrap .column .detail h2::after {
+.wrap .column .detail h3::after {
   content: "";
   height: 1px;
   flex-grow: 1;
   background-color: #bb0404;
   margin-left: 2%;
 }
-.wrap .column .detail h3 {
+.wrap .column .detail h4 {
   display: inline-block;
   background-color: #000000;
   color: #ffffff;
@@ -106,13 +111,13 @@
     bottom: -3%;
     z-index: 1;
   }
-  .wrap .column .main h1 {
+  .wrap .column .main h2 {
     font-size: 60px;
   }
-  .wrap .column .main h1 p {
+  .wrap .column .main h2 p {
     font-size: 108px;
   }
-  .wrap .column .main h2 {
+  .wrap .column .main h3 {
     font-size: 24px;
     font-weight: 700;
   }
@@ -128,7 +133,7 @@
     right: 5%;
     z-index: -1;
   }
-  .wrap .column .detail h3 {
+  .wrap .column .detail h4 {
     font-size: 20px;
   }
   .wrap .column .detail p {
@@ -149,26 +154,26 @@
     bottom: -251px;
     margin-top: -201px;
   }
-  .wrap .column .main h1 {
+  .wrap .column .main h2 {
     font-size: 52px;
     height: 120px;
     padding-top: 15px;
   }
-  .wrap .column .main h1 p {
+  .wrap .column .main h2 p {
     font-size: 114px;
     margin: -25px 0 -15px -10px;
   }
-  .wrap .column .main h2 {
+  .wrap .column .main h3 {
     padding: 15px 20px 5px 20px;
   }
   .wrap .column .main > p {
     height: 180px;
     padding: 0 20px 15px 20px;
   }
-  .wrap .column:nth-child(even) .main h1 {
+  .wrap .column:nth-child(even) .main h2 {
     flex-direction: row-reverse;
   }
-  .wrap .column:nth-child(even) .main h1 p {
+  .wrap .column:nth-child(even) .main h2 p {
     margin: -25px -15px -15px 0;
   }
   .wrap .column .img {
@@ -195,11 +200,11 @@
     top: -30px;
     left: -150px;
   }
-  .wrap .column .detail h2 {
+  .wrap .column .detail h3 {
     font-size: 18px;
     margin-bottom: 0;
   }
-  .wrap .column .detail h3,
+  .wrap .column .detail h4,
 .wrap .column .detail p {
     font-size: 16px;
     margin: 0;

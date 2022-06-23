@@ -5,17 +5,22 @@ $image-color: #bb0404;
   font-family: "Microsoft JhengHei";
   font-size: 14px;
   line-height: 1.5;
+  h1 {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
   .column {
     padding: 40px 12%;
     .main {
-      h1,
       h2,
+      h3,
       p {
         color: #ffffff;
         letter-spacing: 1px;
       }
       // counter-reset: item-count 0;
-      h1 {
+      h2 {
         font-size: 36px;
         background-color: $image-color;
         display: flex;
@@ -35,11 +40,11 @@ $image-color: #bb0404;
           margin: -5% 3% -3% -1%;
         }
       }
-      h2,
+      h3,
       & > p {
         background-color: #000000;
       }
-      h2 {
+      h3 {
         padding: 3% 4% 0;
         font-size: 16px;
       }
@@ -66,7 +71,7 @@ $image-color: #bb0404;
     .detail {
       background-color: #eeeeee;
       padding: 3%;
-      h2 {
+      h3 {
         color: $image-color;
         font-weight: 700;
         margin-bottom: 2%;
@@ -81,7 +86,7 @@ $image-color: #bb0404;
           margin-left: 2%;
         }
       }
-      h3 {
+      h4 {
         display: inline-block;
         background-color: #000000;
         color: #ffffff;
@@ -115,13 +120,13 @@ $image-color: #bb0404;
         left: -3%;
         bottom: -3%;
         z-index: 1;
-        h1 {
+        h2 {
           font-size: 60px;
           p {
             font-size: 108px;
           }
         }
-        h2 {
+        h3 {
           font-size: 24px;
           font-weight: 700;
         }
@@ -141,7 +146,7 @@ $image-color: #bb0404;
         }
       }
       .detail {
-        h3 {
+        h4 {
           font-size: 20px;
         }
         p {
@@ -163,7 +168,7 @@ $image-color: #bb0404;
         left: -200px;
         bottom: -251px;
         margin-top: -201px;
-        h1 {
+        h2 {
           font-size: 52px;
           height: 120px;
           padding-top: 15px;
@@ -172,7 +177,7 @@ $image-color: #bb0404;
             margin: -25px 0 -15px -10px;
           }
         }
-        h2 {
+        h3 {
           padding: 15px 20px 5px 20px;
         }
         & > p {
@@ -180,7 +185,7 @@ $image-color: #bb0404;
           padding: 0 20px 15px 20px;
         }
       }
-      &:nth-child(even) .main h1 {
+      &:nth-child(even) .main h2 {
         flex-direction: row-reverse;
         p {
           margin: -25px -15px -15px 0;
@@ -211,11 +216,11 @@ $image-color: #bb0404;
         position: relative;
         top: -30px;
         left: -150px;
-        h2 {
+        h3 {
           font-size: 18px;
           margin-bottom: 0;
         }
-        h3,
+        h4,
         p {
           font-size: 16px;
           margin: 0;
