@@ -221,7 +221,7 @@ $image-color: #bb0404;
       }
       &:nth-child(even) {
         .main {
-          left: 450px;
+          left: 350px;
 
           h2 {
             flex-direction: row-reverse;
@@ -238,14 +238,14 @@ $image-color: #bb0404;
             right: 100px;
           }
           :nth-child(1) {
-            left: -200px;
+            left: -190px;
           }
           :nth-child(2) {
             right: 850px;
           }
         }
         .detail {
-          left: 50px;
+          left: -40px;
         }
       }
     }

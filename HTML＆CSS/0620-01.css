@@ -204,7 +204,7 @@
     margin: 0;
   }
   .wrap .column:nth-child(even) .main {
-    left: 450px;
+    left: 350px;
   }
   .wrap .column:nth-child(even) .main h2 {
     flex-direction: row-reverse;
@@ -219,12 +219,12 @@
     right: 100px;
   }
   .wrap .column:nth-child(even) .img :nth-child(1) {
-    left: -200px;
+    left: -190px;
   }
   .wrap .column:nth-child(even) .img :nth-child(2) {
     right: 850px;
   }
   .wrap .column:nth-child(even) .detail {
-    left: 50px;
+    left: -40px;
   }
 }/*# sourceMappingURL=0620-01.css.map */
