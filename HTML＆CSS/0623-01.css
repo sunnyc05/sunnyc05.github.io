@@ -8,6 +8,9 @@
 .wrap h2 {
   font-size: 24px;
   font-weight: 600;
+  color: #518432;
+  padding: 50px 0;
+  text-align: center;
 }
 .wrap a {
   text-decoration: none;
@@ -20,9 +23,98 @@
   width: 160px;
 }
 
-main .intro .wrap h2 {
-  color: #518432;
-  text-align: center;
+#menu-switch {
+  position: absolute;
+  display: none;
+}
+
+header .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .wrap .nav-btn-open {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+header .wrap .nav-btn-open span {
+  background-color: #518432;
+  width: 50%;
+  height: 2px;
+  position: absolute;
+  left: 10px;
+}
+header .wrap .nav-btn-open span:nth-child(1) {
+  top: 10px;
+}
+header .wrap .nav-btn-open span:nth-child(2) {
+  top: 20px;
+}
+header .wrap .nav-btn-open span:nth-child(3) {
+  top: 30px;
+}
+header .wrap .main-nav {
+  background-color: #ffffff;
+  width: 90%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -90%;
+  transition: 1s;
+}
+header .wrap .main-nav ul {
+  padding: 20px;
+}
+header .wrap .main-nav ul a {
+  display: block;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 15px 0;
+}
+header .wrap .main-nav .nav-btn-close {
+  background-color: #518432;
+}
+
+#menu-switch:checked ~ .main-nav {
+  left: 0;
+}
+
+main .main-banner {
+  background-image: url(https://cdn.shopify.com/s/files/1/0356/8343/4555/files/bg-slide10.jpg?v=1585303728);
+  padding: 50px 0;
+}
+main .main-banner .wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .main-banner .wrap .banner-text {
+  padding: 0 8%;
+}
+main .main-banner .wrap .banner-text h2 {
+  color: #333333;
+  font-size: 32px;
+  font-weight: 400;
+  text-align: left;
+  padding: 10px 0;
+}
+main .main-banner .wrap .banner-text p {
+  font-size: 18px;
+}
+main .main-banner .wrap .banner-text .shop-btn {
+  margin: 30px 0;
+}
+main .main-banner .wrap .banner-text .shop-btn a {
+  display: inline-block;
+  padding: 10px 30px;
+  border: 1px solid #333333;
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+main .main-banner .wrap img {
+  width: 100%;
 }
 main .intro .wrap > P {
   color: #949494;
@@ -32,6 +124,7 @@ main .intro .wrap > P {
 main .intro .wrap .intro-list {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 50px;
 }
 main .intro .wrap .intro-list .intro-item {
   width: 100%;
@@ -40,10 +133,14 @@ main .intro .wrap .intro-list .intro-item h3 {
   color: #333333;
   font-size: 18px;
   font-weight: 600;
+  line-height: 2;
 }
 main .intro .wrap .intro-list .intro-item p {
   color: #949494;
   font-size: 16px;
+}
+main .intro .wrap .intro-list .intro-item li {
+  padding: 15px 0;
 }
 main .intro .wrap .intro-list .intro-item img {
   width: 100%;
@@ -51,15 +148,14 @@ main .intro .wrap .intro-list .intro-item img {
 main .shop {
   text-align: center;
 }
-main .shop h2 {
-  color: #518432;
-}
 main .shop .row {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 -12px;
 }
 main .shop .row [class*=cols-] {
-  padding: 2%;
+  padding: 6px;
+  position: relative;
 }
 main .shop .row [class*=cols-] img {
   width: 100%;
@@ -67,7 +163,36 @@ main .shop .row [class*=cols-] img {
 main .shop .row [class*=cols-] h3,
 main .shop .row [class*=cols-] p {
   font-weight: 600;
+  line-height: 2;
+}
+main .shop .row [class*=cols-] h3 {
+  font-size: 14px;
+}
+main .shop .row [class*=cols-] p {
   font-size: 16px;
+  padding-top: 10px;
+}
+main .shop .row [class*=cols-] .sp-tag {
+  background-color: #518432;
+  color: #ffffff;
+  font-weight: 600;
+  position: absolute;
+}
+main .shop .row [class*=cols-]:nth-child(2) p::before, main .shop .row [class*=cols-]:nth-child(3) p::before, main .shop .row [class*=cols-]:nth-child(7) p::before, main .shop .row [class*=cols-]:nth-child(8) p::before {
+  content: "$200.00";
+  font-size: 12px;
+  padding-right: 10px;
+}
+main .shop .row [class*=cols-]:nth-child(2) .sp-tag, main .shop .row [class*=cols-]:nth-child(3) .sp-tag, main .shop .row [class*=cols-]:nth-child(7) .sp-tag, main .shop .row [class*=cols-]:nth-child(8) .sp-tag {
+  border-radius: 15px 0;
+  padding: 7px 12px;
+  top: 6px;
+  right: 6px;
+}
+main .shop .row [class*=cols-]:nth-child(5) .sp-tag {
+  padding: 0 8px;
+  top: 35px;
+  left: 6px;
 }
 main .shop .row .cols-2 {
   width: 46%;
@@ -75,7 +200,7 @@ main .shop .row .cols-2 {
 main .media {
   background-image: url(https://cdn.shopify.com/s/files/1/0356/8343/4555/files/bg-video1.jpg?v=1585532362);
   background-position: left;
-  padding: 50px 0;
+  padding: 70px 0;
 }
 main .media .wrap {
   display: flex;
@@ -85,8 +210,7 @@ main .media .wrap .text {
   width: 100%;
 }
 main .media .wrap .text h2 {
-  color: #518432;
-  padding: 10px 0;
+  padding: 0 0 10px;
 }
 main .media .wrap .text p {
   color: #333333;
@@ -176,4 +300,90 @@ footer .info a {
 footer .copyright p {
   color: #949494;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .wrap {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  header .wrap .nav-btn-open,
+header .wrap .nav-btn-close {
+    display: none;
+  }
+  header .wrap .main-nav {
+    position: unset;
+  }
+  header .wrap .main-nav ul {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+  }
+  header .wrap .main-nav ul a {
+    text-transform: capitalize;
+  }
+
+  main .main-banner .wrap .banner-text {
+    width: 50%;
+    box-sizing: border-box;
+  }
+  main .main-banner .wrap .banner-text h2 {
+    font-size: 60px;
+  }
+  main .main-banner .wrap .banner-text p {
+    font-size: 20px;
+    color: #949494;
+  }
+  main .main-banner .wrap .banner-img {
+    width: 50%;
+  }
+  main .intro .wrap h2 {
+    font-size: 28px;
+  }
+  main .intro .wrap > p {
+    font-size: 20pz;
+  }
+  main .intro .wrap .intro-list .intro-item {
+    width: 35%;
+  }
+  main .intro .wrap .intro-list .intro-item h3 {
+    font-size: 24px;
+  }
+  main .intro .wrap .intro-list .intro-item:first-child li:nth-child(1), main .intro .wrap .intro-list .intro-item:first-child li:nth-child(2), main .intro .wrap .intro-list .intro-item:first-child li:nth-child(3) {
+    text-align: right;
+  }
+  main .intro .wrap .intro-list div.intro-item {
+    width: 30%;
+  }
+
+  .shop .wrap h2 {
+    font-size: 28px;
+  }
+  .shop .wrap .row .cols-l-3 {
+    width: 29.33%;
+    padding: 24px;
+  }
+  .shop .wrap .row .cols-l-3:nth-child(2) .sp-tag, .shop .wrap .row .cols-l-3:nth-child(3) .sp-tag, .shop .wrap .row .cols-l-3:nth-child(7) .sp-tag, .shop .wrap .row .cols-l-3:nth-child(8) .sp-tag {
+    top: 24px;
+    right: 24px;
+  }
+  .shop .wrap .row .cols-l-3:nth-child(5) .sp-tag {
+    top: 60px;
+    left: 24px;
+  }
+
+  .media .wrap {
+    flex-wrap: nowrap;
+  }
+  .media .wrap .text,
+.media .wrap .video {
+    width: 45%;
+    box-sizing: border-box;
+  }
+
+  .insta .wrap ul li:nth-child(3),
+.insta .wrap ul li:nth-child(4) {
+    display: block;
+  }
 }/*# sourceMappingURL=0623-01.css.map */

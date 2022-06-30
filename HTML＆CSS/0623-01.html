@@ -19,28 +19,50 @@
     <link rel="stylesheet" href="./0623-01.css" />
   </head>
   <body>
+    <input type="checkbox" id="menu-switch">
     <header>
-      <div class="main-nav-btn"><span></span><span></span><span></span></div>
-      <nav class="main-nav"></nav>
-      <section class="logo">
-        <a href="#"
-          ><img
-            src="https://cdn.shopify.com/s/files/1/0356/8343/4555/files/logo.png?v=1585540695"
-            alt="SunPlant"
-        /></a>
-      </section>
-      <section class="toolbar"></section>
+      <div class="wrap">
+        
+        <label class="nav-btn-open" for="menu-switch"><span></span><span></span><span></span></label>
+        <nav class="main-nav" >
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Featured</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Element</a></li>
+          </ul>
+          <label class="nav-btn-close" for="menu-switch"><span></span><span></span><p>CLOSE</p></label>
+        </nav>
+        <section class="logo">
+          <a href="#"
+            ><img
+              src="https://cdn.shopify.com/s/files/1/0356/8343/4555/files/logo.png?v=1585540695"
+              alt="SunPlant"
+          /></a>
+        </section>
+        <section class="toolbar"></section>
+      </div>
     </header>
     <main>
       
-        <section class="main-banner"></section>
+        <section class="main-banner">
+          <div class="wrap">
+          <div class="banner-text">
+            <h2>Collection New Beautiful</h2>
+            <p>from $69</p>
+            <div class="shop-btn"><a href="#">SHOP NOW</a></div>
+          </div>
+          <div class="banner-img">
+            <img src="https://cdn.shopify.com/s/files/1/0356/8343/4555/files/slidesho10-small-2.png?v=1585303730" alt=""></div>
+        </div></section>
         <article class="intro">
          <div class="wrap"> <h2>The important benefits of
           greenery for the environment and health</h2>
           <p>Trees have always been considered as "lungs" of the earth. Planting lots of trees helps provide a great deal of oxygen for us to breathe.
             <br>On average, one tree can provide enough oxygen for four people. At the same time they also absorb C02, ammonia, S02, .. in the world!
           <div class="intro-list">
-            <div class="intro-item"><ul>
+            <ul class="intro-item">
               <li>
                 <h3>Reducing environmental pollution</h3>
                 <p>Trees have always been considered as "lungs" of the earth.</p>
@@ -54,10 +76,10 @@
                 <p>Planting more trees in densely populated areas will not only make the air there more fresh
                 </p>
               </li>
-            </ul></div>
+            </ul>
             <div class="intro-item"><a href="#"><img src="https://cdn.shopify.com/s/files/1/0356/8343/4555/files/info-v2.jpg?v=1585303814" alt="The important benefits of
               greenery for the environment and health"></a></div>
-            <div class="intro-item"><ul>
+            <ul class="intro-item"><ul>
               <li>
                 <h3>Energy conservation</h3>
                 <p>One tree can cool down, cool down 10 rooms</p>
@@ -71,7 +93,7 @@
                 </h3>
                 <p>Living in a quiet, cool, clean and fresh environment will make your health better</p>
               </li>
-            </ul></div>
+            </ul>
           </div></p></div>
         </article>
         <section class="shop">
@@ -84,11 +106,12 @@
             <li class="cols-2 cols-l-3"><a href="#"><img src="https://cdn.shopify.com/s/files/1/0356/8343/4555/products/6.jpg?v=1585534424" alt="Fringilla Augue 360">
               <h3>Fringilla Augue 360</h3>
               <p>$150.00</p>
-            </a></li>
+            </a>
+          <div class="sp-tag">SALE</div></li>
             <li class="cols-2 cols-l-3"><a href="#"><img src="https://cdn.shopify.com/s/files/1/0356/8343/4555/products/191-large_default_bdf68ca7-5284-412c-9fec-78235d9cd046.jpg?v=1585273709" alt="Fringilla Augue 360">
               <h3>Fringilla Augue 360</h3>
               <p>$150.00</p>
-            </a></li>
+            </a><div class="sp-tag">SALE</div></li>
             <li class="cols-2 cols-l-3"><a href="#"><img src="https://cdn.shopify.com/s/files/1/0356/8343/4555/products/157-large_default.jpg?v=1585273757" alt="Purple Flowers">
               <h3>Purple Flowers</h3>
               <p>$180.00</p>
@@ -96,7 +119,7 @@
             <li class="cols-2 cols-l-3"><a href="#"><img src="https://cdn.shopify.com/s/files/1/0356/8343/4555/products/3.jpg?v=1585533927" alt="Adipiscing Cursus Out Of Stock">
               <h3>Adipiscing Cursus Out Of Stock</h3>
               <p>$450.00</p>
-            </a></li>
+            </a><div class="sp-tag">SOLD OUT</div></li>
             <li class="cols-2 cols-l-3"><a href="#"><img src="https://cdn.shopify.com/s/files/1/0356/8343/4555/products/215-large_default.jpg?v=1585273720" alt="Fringilla Augue">
               <h3>Fringilla Augue</h3>
               <p>$320.00</p>
@@ -104,15 +127,17 @@
             <li class="cols-2 cols-l-3"><a href="#"><img src="https://cdn.shopify.com/s/files/1/0356/8343/4555/products/163-large_default.jpg?v=1585273753" alt="Purple Flowers">
               <h3>Purple Flowers</h3>
               <p>$150.00</p>
-            </a></li>
+            </a><div class="sp-tag">SALE</div></li>
             <li class="cols-2 cols-l-3"><a href="#"><img src="https://cdn.shopify.com/s/files/1/0356/8343/4555/products/169-large_default.jpg?v=1585273748" alt="Plant">
               <h3>Plant</h3>
               <p>$150.00</p>
-            </a></li>
+            </a>
+            <div class="sp-tag">SALE</div></li>
             <li class="cols-2 cols-l-3"><a href="#"><img src="https://cdn.shopify.com/s/files/1/0356/8343/4555/products/172-large_default.jpg?v=1585273745" alt="Plant Beautiful">
               <h3>Plant Beautiful</h3>
               <p>$150.00</p>
-            </a></li>
+            </a>
+            </li>
           </ul></div>
         </section>
         <section class="media"><div class="wrap">

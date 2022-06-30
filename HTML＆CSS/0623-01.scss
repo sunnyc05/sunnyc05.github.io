@@ -12,6 +12,9 @@ $text-gray: #949494;
   h2 {
     font-size: 24px;
     font-weight: 600;
+    color: $image-green;
+    padding: 50px 0;
+    text-align: center;
   }
   a {
     text-decoration: none;
@@ -24,15 +27,107 @@ $text-gray: #949494;
     }
   }
 }
+// ============= #menu-switch
+#menu-switch {
+  position: absolute;
+  display: none;
+}
+
 // ============= header
+header .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .nav-btn-open {
+    position: relative;
+    width: 40px;
+    height: 40px;
+
+    span {
+      background-color: $image-green;
+      width: 50%;
+      height: 2px;
+      position: absolute;
+      left: 10px;
+      &:nth-child(1) {
+        top: 10px;
+      }
+      &:nth-child(2) {
+        top: 20px;
+      }
+      &:nth-child(3) {
+        top: 30px;
+      }
+    }
+  }
+  .main-nav {
+    background-color: #ffffff;
+    width: 90%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -90%;
+    transition: 1s;
+    ul {
+      padding: 20px;
+      a {
+        display: block;
+        font-size: 16px;
+        text-transform: uppercase;
+        padding: 15px 0;
+      }
+    }
+    .nav-btn-close {
+      background-color: $image-green;
+    }
+  }
+}
+#menu-switch:checked ~ .main-nav {
+  left: 0;
+}
 
 // ============= main
 main {
-  .intro .wrap {
-    h2 {
-      color: $image-green;
-      text-align: center;
+  .main-banner {
+    background-image: url(https://cdn.shopify.com/s/files/1/0356/8343/4555/files/bg-slide10.jpg?v=1585303728);
+    padding: 50px 0;
+    .wrap {
+      display: flex;
+      flex-wrap: wrap;
+
+      .banner-text {
+        padding: 0 8%;
+        h2 {
+          color: $title-black;
+          font-size: 32px;
+          font-weight: 400;
+          text-align: left;
+          padding: 10px 0;
+        }
+        p {
+          font-size: 18px;
+        }
+        .shop-btn {
+          margin: 30px 0;
+          a {
+            display: inline-block;
+            padding: 10px 30px;
+            border: 1px solid $title-black;
+            background-color: $title-black;
+            color: #ffffff;
+            font-size: 14px;
+            letter-spacing: 1px;
+          }
+        }
+      }
+
+      img {
+        width: 100%;
+      }
     }
+  }
+  .intro .wrap {
     & > P {
       color: $text-gray;
       font-style: italic;
@@ -41,16 +136,21 @@ main {
     .intro-list {
       display: flex;
       flex-wrap: wrap;
+      padding-top: 50px;
       .intro-item {
         width: 100%;
         h3 {
           color: $title-black;
           font-size: 18px;
           font-weight: 600;
+          line-height: 2;
         }
         p {
           color: $text-gray;
           font-size: 16px;
+        }
+        li {
+          padding: 15px 0;
         }
         img {
           width: 100%;
@@ -60,21 +160,56 @@ main {
   }
   .shop {
     text-align: center;
-    h2 {
-      color: $image-green;
-    }
     .row {
       display: flex;
       flex-wrap: wrap;
+      margin: 0 -12px;
       [class*="cols-"] {
-        padding: 2%;
+        padding: 6px;
+        position: relative;
+
         img {
           width: 100%;
         }
         h3,
         p {
           font-weight: 600;
+          line-height: 2;
+        }
+        h3 {
+          font-size: 14px;
+        }
+        p {
           font-size: 16px;
+          padding-top: 10px;
+        }
+        .sp-tag {
+          background-color: $image-green;
+          color: #ffffff;
+          font-weight: 600;
+          position: absolute;
+        }
+
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(7),
+        &:nth-child(8) {
+          p::before {
+            content: "$200.00";
+            font-size: 12px;
+            padding-right: 10px;
+          }
+          .sp-tag {
+            border-radius: 15px 0;
+            padding: 7px 12px;
+            top: 6px;
+            right: 6px;
+          }
+        }
+        &:nth-child(5) .sp-tag {
+          padding: 0 8px;
+          top: 35px;
+          left: 6px;
         }
       }
       .cols-2 {
@@ -85,15 +220,14 @@ main {
   .media {
     background-image: url(https://cdn.shopify.com/s/files/1/0356/8343/4555/files/bg-video1.jpg?v=1585532362);
     background-position: left;
-    padding: 50px 0;
+    padding: 70px 0;
     .wrap {
       display: flex;
       flex-wrap: wrap;
       .text {
         width: 100%;
         h2 {
-          color: $image-green;
-          padding: 10px 0;
+          padding: 0 0 10px;
         }
         p {
           color: $title-black;
@@ -194,6 +328,110 @@ footer {
     p {
       color: $text-gray;
       text-align: center;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wrap {
+    max-width: 1200px;
+    margin: auto;
+  }
+  // ============= header
+  header .wrap {
+    .nav-btn-open,
+    .nav-btn-close {
+      display: none;
+    }
+    .main-nav {
+      position: unset;
+      ul {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        a {
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+  // ============= main
+  main {
+    .main-banner .wrap {
+      .banner-text {
+        width: 50%;
+        box-sizing: border-box;
+        h2 {
+          font-size: 60px;
+        }
+        p {
+          font-size: 20px;
+          color: $text-gray;
+        }
+      }
+      .banner-img {
+        width: 50%;
+      }
+    }
+    .intro .wrap {
+      h2 {
+        font-size: 28px;
+      }
+      & > p {
+        font-size: 20pz;
+      }
+      .intro-list {
+        .intro-item {
+          width: 35%;
+          h3 {
+            font-size: 24px;
+          }
+          &:first-child li:nth-child(1),
+          &:first-child li:nth-child(2),
+          &:first-child li:nth-child(3) {
+            text-align: right;
+          }
+        }
+        div.intro-item {
+          width: 30%;
+        }
+      }
+    }
+  }
+  .shop .wrap {
+    h2 {
+      font-size: 28px;
+    }
+    .row .cols-l-3 {
+      width: calc(33.33% - 4%);
+      padding: 24px;
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(7),
+      &:nth-child(8) {
+        .sp-tag {
+          top: 24px;
+          right: 24px;
+        }
+      }
+      &:nth-child(5) .sp-tag {
+        top: 60px;
+        left: 24px;
+      }
+    }
+  }
+  .media .wrap {
+    flex-wrap: nowrap;
+    .text,
+    .video {
+      width: 45%;
+      box-sizing: border-box;
+    }
+  }
+  .insta .wrap {
+    ul li:nth-child(3),
+    ul li:nth-child(4) {
+      display: block;
     }
   }
 }
