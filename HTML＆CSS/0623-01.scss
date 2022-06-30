@@ -37,6 +37,7 @@ header .wrap {
   align-items: center;
 
   .nav-btn-open {
+    order: -1;
     position: relative;
     width: 80px;
     height: 40px;
@@ -58,6 +59,7 @@ header .wrap {
     }
   }
   .main-nav {
+    order: -1;
     background-color: #ffffff;
     width: 90%;
     position: fixed;
@@ -95,11 +97,11 @@ header .wrap {
     width: 1px;
     height: 1px;
     overflow: hidden;
-    order: 1;
+  
   }
 }
 .toolbar {
-  order: 1;
+  
   width: 80px;
   ul {
     display: flex;
