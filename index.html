@@ -36,13 +36,13 @@
 section.course{
   display: flex;
   justify-content: space-around;
-  padding-top: 30px;
+  padding: 30px 0;
 }
 .course div{
   border: 1px solid;
   padding: 5px 10px;
 }
-.course a{
+section a{
   display: inline-block;
   padding: 5px;
   text-decoration: none;
@@ -50,20 +50,26 @@ section.course{
   border-radius: 10px;
   transition: .3s
 }
-.course a:hover{
+section a:hover{
 background-color: #58B2DC;
 color: #FFFFFB;
 
 }
-.course h2{
+section h2{
   font-size: 24px;
   font-weight: 700;
   text-align: center;
   padding-bottom: 10px;
 }
-.course ul{
+section ul{
   padding-left: 25px;
   list-style:disc;
+}
+
+section.hackathon{
+  border: 1px solid;
+  margin: 0 50px;
+  padding: 5px 10px;
 }
 
     </style>
@@ -97,6 +103,12 @@ color: #FFFFFB;
             <li><a href="./JavaScript/0704-01.html">07/04作業：MarketingShare</a></li>
           </ul>
         </div>
+      </section>
+      <section class="hackathon">
+        <h2>前端黑客松</h2>
+        <ul>
+          <li><a href="./前端黑客松/0707-01.html">07/07：終極密碼</a></li>
+        </ul>
       </section>
     </div>
 
