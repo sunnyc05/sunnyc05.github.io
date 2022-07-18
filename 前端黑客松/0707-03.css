@@ -1,0 +1,34 @@
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus,
+button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.color-btn,.fit-btn{
+    position: relative;
+    border: 1px solid #d3d3d3;
+}
+
+
+[selected="true"]::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 5px solid #79bcff;
+  border-radius: 0.25rem;
+}
+
+i{
+  font-size: 32px;
+  margin-bottom: 10px;
+  border: 1px solid #d6d6d6;
+  border-radius: 50%;
+}

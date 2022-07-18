@@ -1,13 +1,18 @@
-let min, max, answer
-controlBtn()
+let min=0
+let max=100
+let answer
+
+const startBtn = document.querySelector("button.start")
+const inputBtns = document.querySelectorAll(".input-num button")
+const numBtns = document.querySelectorAll("button.number")
+const checkBtn = document.querySelector("button.check")
+const resetBtn = document.querySelector("button.reset")
 
 window.onload = function () {
-  let startBtn = document.querySelector("button.start")
+  controlBtn()
+
   startBtn.addEventListener("click", getRandom)
   startBtn.addEventListener("click", controlBtn)
-
-  min = 0
-  max = 100
 
   let range = document.querySelector(".show-range")
   let rangeP = document.createElement("p")
@@ -18,15 +23,11 @@ window.onload = function () {
   let guessBoxP = document.createElement("p")
   guessBox.append(guessBoxP)
 
-  let numBtns = document.querySelectorAll(".number")
   numBtns.forEach((numBtn) => {
     numBtn.addEventListener("click", getGuess)
   })
 
-  let checkBtn = document.querySelector("button.check")
   checkBtn.addEventListener("click", getRange)
-
-  let resetBtn = document.querySelector("button.reset")
   resetBtn.addEventListener("click", resetNum)
 }
 
@@ -43,11 +44,14 @@ function getRange() {
   let num = parseInt(guessP.innerText)
   guessP.innerText = ""
 
-  if (num > max || num < min) {
+  if (num >= max || num <= min) {
     alert("請輸入範圍內的數字")
   } else if (num == answer) {
     alert("正確答案")
     answer = undefined
+    min = 0
+    max = 100
+    document.querySelector(".show-range p").innerText = `${min} ~ ${max}`
     controlBtn()
   } else {
     if (num < answer) {
@@ -66,9 +70,6 @@ function resetNum() {
 }
 
 function controlBtn() {
-  let inputBtns = document.querySelectorAll(".input-num button")
-  let startBtn = document.querySelector("button.start")
-
   if (answer == undefined) {
     inputBtns.forEach((btn) => {
       btn.disabled = true

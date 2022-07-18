@@ -339,7 +339,6 @@ footer .copyright p {
   .wrap h2 {
     font-size: 32px;
   }
-
   header .wrap {
     display: flex;
     justify-content: space-between;
@@ -369,7 +368,6 @@ header .wrap .main-nav .nav-btn-close {
   header .wrap .toolbar ul li:nth-child(2) {
     display: block;
   }
-
   main .main-banner .wrap .banner-text {
     width: 50%;
     box-sizing: border-box;
@@ -432,7 +430,6 @@ main .media .wrap .video {
 main .insta .wrap ul li:nth-child(4) {
     display: block;
   }
-
   footer .logo {
     text-align: center;
   }

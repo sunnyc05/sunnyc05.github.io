@@ -1,0 +1,10 @@
+.container {
+  width: 800px;
+  padding: 20px;
+  margin: 20px auto;
+  border: 3px solid rgb(181, 181, 181);
+}
+.container .game-control {
+  display: flex;
+  flex-grow: 1;
+}/*# sourceMappingURL=0707-02.css.map */
