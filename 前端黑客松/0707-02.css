@@ -1,5 +1,7 @@
-body{
-  background-image: linear-gradient(#f2f9ff 0%,#a6bce6 100%);
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(#f2f9ff 0%, #cfdbf4 100%);
 }
 
 .container {
@@ -7,7 +9,7 @@ body{
   padding: 30px;
   margin: 100px auto;
   border: 2px solid rgb(163, 133, 188);
-  border-radius:5px;
+  border-radius: 5px;
   box-shadow: 0 0 10px rgb(150, 113, 186);
 }
 .guess-result {
