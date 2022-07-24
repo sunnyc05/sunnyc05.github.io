@@ -1,16 +1,16 @@
 body {
-  margin: 0;
-  padding: 0;
-  background-image: linear-gradient(#f2f9ff 0%, #cfdbf4 100%);
+
+  height: 100vh;
+  background-image: linear-gradient(#dfefff 0%, #a2b7e2 50%,#dfefff 100%);
 }
 
 .container {
   width: 800px;
   padding: 30px;
   margin: 100px auto;
-  border: 2px solid rgb(163, 133, 188);
+  border: 2px solid rgb(137, 116, 200);
   border-radius: 5px;
-  box-shadow: 0 0 10px rgb(150, 113, 186);
+  box-shadow: 0 0 10px rgb(151, 134, 203);
 }
 .guess-result {
   height: 500px;
