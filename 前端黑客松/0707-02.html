@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../HTML＆CSS/reset.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./0707-02.css">
   </head>
@@ -12,18 +11,62 @@
 </head>
 <body>
     <div class="container">
-        <section class="game-control btn-group mb-4">
+        <section class="game-control btn-group mb-4 d-flex">
             <button class="start btn btn-outline-secondary">開始遊戲</button>
-            <button class="reset btn btn-outline-secondary">放棄重來</button>
-            <button class="answer btn btn-outline-secondary">看答案</button>
+            <button class="reset btn btn-outline-secondary">重新開始</button>
+            <button class="answer btn btn-outline-secondary">偷看答案</button>
         </section>
-        <section class="guess-result mb-4"></section>
 
-        <section class="guess-input">猜答案</label>
-            <label for="input">
-                <input type="text" id="input">
-            <button class="guess">猜！</button>
+        <ul class="guess-result list-group mb-4 border border-dark rounded-2 p-3"></ul>
+
+        <section class="guess-input input-group">
+            <label for="input" class="input-group-text">猜答案</label>
+                <input type="text" id="input" class="form-control">
+            <button class="guess btn btn-outline-secondary">猜！</button>
         </section>
     </div>
+<!-- modal -->
+<div class="modal" id="guess-wrong-type" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+          <p>請輸入四個不重複的數字</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="show-answer" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+          <p></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="correct-answer" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5>恭喜答對了！</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+          <p>請按「重新開始」以開始一局新遊戲</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="./0707-02.js"></script>
 </body>
 </html>

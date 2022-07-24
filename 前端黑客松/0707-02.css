@@ -1,10 +1,16 @@
+body{
+  background-image: linear-gradient(#f2f9ff 0%,#a6bce6 100%);
+}
+
 .container {
   width: 800px;
-  padding: 20px;
-  margin: 20px auto;
-  border: 3px solid rgb(181, 181, 181);
+  padding: 30px;
+  margin: 100px auto;
+  border: 2px solid rgb(163, 133, 188);
+  border-radius:5px;
+  box-shadow: 0 0 10px rgb(150, 113, 186);
 }
-.container .game-control {
-  display: flex;
-  flex-grow: 1;
-}/*# sourceMappingURL=0707-02.css.map */
+.guess-result {
+  height: 500px;
+  overflow-y: auto;
+}
