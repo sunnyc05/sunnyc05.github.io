@@ -1,0 +1,116 @@
+/* 通用 - section內距 */
+section {
+  padding: 20px 0;
+}
+/* 通用 - 申請按鈕 */
+.application-btn {
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--clr-border);
+  color: #ffffff;
+  font-size: 14px;
+  display: inline-block;
+  padding: 15px 40px;
+  transition: 0.5s;
+}
+.application-btn:hover,
+.application-btn:focus {
+  background-color: var(--clr-specfont);
+}
+
+/* banner */
+.banner {
+  background-image: linear-gradient(75deg, var(--clr-bg-g), var(--clr-primary));
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 25%;
+}
+.banner h2 {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 10px 0;
+  letter-spacing: 1px;
+}
+.banner p {
+  position: relative;
+  margin-bottom: 50px;
+  font-size: 14px;
+}
+.benefit-list {
+  padding-top: 50px;
+}
+.benefit-list li {
+  font-size: 18px;
+  padding-bottom: 15px;
+}
+.benefit-list i {
+  font-size: 72px;
+  padding-bottom: 10px;
+}
+
+/* 簡介 */
+.petsitter-introduction {
+  text-align: center;
+}
+.petsitter-introduction p {
+  text-align: left;
+}
+.petsitter-introduction span {
+  display: inline-block;
+  padding: 20px 0;
+  line-height: 1.5;
+  color: var(--clr-border);
+  font-weight: 700;
+  font-size: 18px;
+}
+.petsitter-introduction i {
+  font-size: 28px;
+  position: relative;
+  animation: move-arrow 0.5s infinite alternate;
+}
+@keyframes move-arrow {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 5px;
+  }
+}
+
+/* 流程 */
+.petsitter-process .step:nth-child(odd) {
+  background-color: var(--clr-bg-y);
+}
+.petsitter-process h3 {
+  font-size: var(--vicefont);
+  color: var(--clr-border);
+  padding-bottom: 10px;
+}
+.petsitter-process .step:last-child {
+  text-align: center;
+}
+
+/* RWD */
+@media screen and (min-width: 768px) {
+  .petsitter-introduction p {
+    text-align: center;
+    line-height: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .banner p::before,
+  .banner p::after {
+    content: "";
+    background-color: #ffffff;
+    width: 5%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+  }
+  .banner p::before {
+    left: 30%;
+  }
+  .banner p::after {
+    right: 30%;
+  }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./pawsday.css" />
+    <link rel="stylesheet" href="./04_1-petsitter_info_form.css" />
+    <script
+      src="https://kit.fontawesome.com/8b9cdc6b98.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h2>資料填寫及證件上傳</h2>
+        <div class="row row-cols-1 row-cols-lg-3">
+          <div class="col">
+            <label for="id-number">身份證字號</label>
+            <input
+              type="text"
+              id="id-number"
+              placeholder="身份證字號"
+              required
+            />
+          </div>
+          <div class="col">
+            <label for="swift-code">收款銀行代碼</label>
+            <input
+              type="tel"
+              id="swift-code"
+              placeholder="收款銀行代碼（共3碼）"
+              required
+            />
+          </div>
+          <div class="col">
+            <label for="receiving-account">收款帳號</label>
+            <input
+              type="tel"
+              id="receiving-account"
+              placeholder="收款帳號（共14碼）"
+              required
+            />
+          </div>
+        </div>
+        <div class="row row-cols-1">
+          <div class="col">
+            <label for="pet-experience">寵物經驗</label>
+            <textarea id="pet-experience" required></textarea>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-lg-2">
+          <div class="col">
+            <label for="identity-card">身份證／護照</label
+            ><input type="file" id="identity-card" required />
+          </div>
+          <div class="col">
+            <label for="selfie">自拍照</label
+            ><input type="file" id="selfie" required />
+          </div>
+        </div>
+        <div class="row row-cols-1">
+          <div class="col">
+            <label for="license">相關證照</label
+            ><input type="file" id="license" multiple />
+          </div>
+        </div>
+        <div class="step-control">
+          <a href="" class="next-btn"
+            >下一步<i class="fa-solid fa-chevron-right"></i
+          ></a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+
+<!-- 各項input的id（資料抓取用）
+身份證字號：id-number
+收款銀行代碼：swift-code
+收款帳號：receiving-account
+寵物經驗：pet-experience
+身份證／護照上傳：identity-card
+自拍照上傳：selfie
+相關證照上傳（多個）：license
+-->
