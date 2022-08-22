@@ -46,7 +46,8 @@ textarea {
 .step-control {
   text-align: right;
 }
-.next-btn {
+.next-btn,
+.previous-btn {
   display: inline-block;
   text-decoration: none;
   padding: 10px 15px;
@@ -57,9 +58,14 @@ textarea {
   transition: 0.5s;
 }
 .next-btn:hover,
-.next-btn:focus {
+.next-btn:focus,
+.previous-btn:hover,
+.previous-btn:focus {
   background-color: var(--clr-specfont);
 }
 .next-btn i {
   margin-left: 5px;
+}
+.previous-btn i {
+  margin-right: 5px;
 }

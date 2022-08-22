@@ -1,0 +1,64 @@
+/* container */
+main {
+    background-color: var(--clr-bg-y);
+    padding: 20px;
+  }
+  .container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .container h2 {
+    color: var(--clr-specfont);
+    font-size: var(--vicefont);
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  /* 表單項目 */
+  label {
+    display: block;
+    font-size: var(--font);
+    margin-bottom: 10px;
+  }
+  input,
+  textarea {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px 12px;
+    outline: none;
+    border: 1px solid var(--clr-bg-g);
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  input:focus,
+  textarea:focus {
+    border: 1px solid var(--clr-border);
+  }
+  textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  /* 按鈕 */
+  .step-control {
+    text-align: center;
+    padding-top: 30px;
+  }
+  .done-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 0 10px;
+    background-color: var(--clr-border);
+    color: var(--clr-bg-y);
+    transition: 0.5s;
+  }
+  .done-btn:hover,
+  .done-btn:focus {
+    background-color: var(--clr-specfont);
+  }
+ 

@@ -15,38 +15,30 @@ main {
   margin-bottom: 20px;
 }
 
-/* 表單項目 */
-label {
-  display: block;
-  font-size: var(--font);
-  margin-bottom: 10px;
-}
-input,
-textarea {
-  display: block;
-  box-sizing: border-box;
-  width: 100%;
+/* 預覽內容 */
+.content-box{
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid var(--clr-primary);
   border-radius: 10px;
-  padding: 10px 12px;
-  outline: none;
-  border: 1px solid var(--clr-bg-g);
-  margin-bottom: 20px;
-  font-size: 16px;
 }
-input:focus,
-textarea:focus {
-  border: 1px solid var(--clr-border);
+.content-box h3 {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 20px;
 }
-textarea {
-  resize: none;
-  height: 100px;
+.content-box p {
+  font-size: var(--font);
+  line-height: 2;
 }
 
 /* 按鈕 */
 .step-control {
   text-align: right;
 }
-.next-btn {
+.next-btn,
+.previous-btn {
   display: inline-block;
   text-decoration: none;
   padding: 10px 15px;
@@ -57,9 +49,14 @@ textarea {
   transition: 0.5s;
 }
 .next-btn:hover,
-.next-btn:focus {
+.next-btn:focus,
+.previous-btn:hover,
+.previous-btn:focus {
   background-color: var(--clr-specfont);
 }
 .next-btn i {
   margin-left: 5px;
+}
+.previous-btn i {
+  margin-right: 5px;
 }
