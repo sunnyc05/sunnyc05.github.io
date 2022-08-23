@@ -1,6 +1,5 @@
 /* banner */
 .banner {
-  background-image: url(./01-homecare_banner.jpg);
   background-position: 30% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,18 +15,25 @@
 }
 
 /* 跳轉各項服務 */
-.service-type {
+.service-box,
+.btn-box {
   display: flex;
   justify-content: center;
+}
+.service-type {
+  display: flex;
+  justify-content: space-evenly;
   background-color: #ffffff;
   border: 1px solid #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.04);
+  border-radius: var(--radius);
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05);
   margin-top: -10px;
+  width: 100%;
+  max-width: 400px;
 }
 .service-type li {
   margin: 0 5px;
-  padding: 20px 10px;
+  padding: 20px 0 15px;
   text-align: center;
 }
 .service-type a {
@@ -37,7 +43,7 @@
 }
 .service-type i {
   font-size: 24px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   color: var(--clr-border);
 }
 .service-type li:hover i,
@@ -51,25 +57,25 @@
   }
   100% {
     position: relative;
-    top: -10px;
+    top: -8px;
   }
 }
 
 /* 單項服務說明 */
-.homecare {
+.service-content {
   padding: 20px 0;
 }
-.homecare h3 {
+.service-content h3 {
   font-size: 24px;
   padding: 10px 0;
 }
-.homecare p {
+.service-content p {
   padding-bottom: 10px;
 }
-.homecare li {
+.service-content li {
   line-height: 2;
 }
-.homecare li i {
+.service-content li i {
   font-size: 12px;
   vertical-align: center;
   color: var(--clr-primary);
@@ -80,16 +86,8 @@
 .search-btn {
   display: inline-block;
   text-decoration: none;
-  color: var(--clr-bg-y);
-  background-color: var(--clr-border);
-  padding: 15px 10px;
-  border-radius: 10px;
+  padding: 10px 15px;
   margin-bottom: 20px;
-  transition: 0.5s;
-}
-.search-btn:hover,
-.search-btn:focus {
-  background-color: var(--clr-specfont);
 }
 
 /* 平台服務介紹 */
@@ -131,10 +129,7 @@
     font-size: 40px;
   }
   .service-type {
-    position: relative;
-    left: 25%;
-    width: 50%;
-    margin-top: -60px;
+    margin-top: -50px;
   }
   .service-type li {
     margin: 0 10px;

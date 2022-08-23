@@ -5,10 +5,7 @@ section {
 /* 通用 - 申請按鈕 */
 .application-btn {
   text-decoration: none;
-  text-align: center;
-  background-color: var(--clr-border);
-  color: #ffffff;
-  font-size: 14px;
+  font-size: var(--font);
   display: inline-block;
   padding: 15px 40px;
   transition: 0.5s;
@@ -51,9 +48,13 @@ section {
 /* 簡介 */
 .petsitter-introduction {
   text-align: center;
+  padding-top: 30px;
 }
 .petsitter-introduction p {
   text-align: left;
+  color: var(--clr-font-g);
+  font-size: var(--font);
+  
 }
 .petsitter-introduction span {
   display: inline-block;

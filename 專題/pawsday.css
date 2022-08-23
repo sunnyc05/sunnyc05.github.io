@@ -39,7 +39,19 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus,
+button:focus,
+button,
+.form-control{
+    outline: none !important;
+    box-shadow: none !important;
+    border: none;
+}
 /* 共版 */
 body{
     line-height: 1.5;
@@ -52,25 +64,60 @@ body{
     --clr-border: #a26d39;  /*邊框線*/
     --clr-specfont: #562f09;/*主標*/
     --clr-font: #0c0b0b;    /*內文*/
+    --clr-font-g: #454545;    /*內文*/
     --mainfont:36px;    /*主標字體大小*/
     --vicefont:26px;    /*副標字體大小*/
     --font:14px;        /*內文字體大小*/
-    --fw-specfont: 500; /*主/副標font-weight*/
+    --fw-specfont: 700; /*主/副標font-weight*/
+    --radius: 6px;
 }
 img {
     width: 100%;
     vertical-align: text-top;
 }
+.pawsday-btn{
+    color: #fff;
+    background-color: var(--clr-border);
+    border-radius: var(--radius);
+    transition: 0.5s;
+    padding: 10px 15px;
+}
+.pawsday-btn:hover,
+.pawsday-btn:focus{
+    color: #fff;
+    background-color: var(--clr-specfont);
+}
+.pawsday-input{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border: 1px solid var(--clr-bg-g);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.pawsday-input:focus{
+    border: 1px solid var(--clr-border);
+    outline: none;
+}
+.pawsday-input::placeholder{
+    color: var(--clr-bg-g);
+    font-size: var(--font);
+}
+
+.pawsday-input-label{
+    margin-bottom: 10px;
+    font-size: var(--font);
+}
 
 /* 格線設計 */
 .container{
-    max-width: 1200px;
+    max-width: 992px;
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
 }
-
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -125,27 +172,12 @@ img {
     .col-lg-11{width: 91.6666%;}
     .col-lg-12{width: 100%;}
 }
-@media screen and (min-width:1200px) {
-    .col-xl-1{width: 8.3333%;}
-    .col-xl-2{width: 16.6666%;}
-    .col-xl-3{width: 25%;}
-    .col-xl-4{width: 33.3333%;}
-    .col-xl-5{width: 41.6666%;}
-    .col-xl-6{width: 50%;}
-    .col-xl-7{width: 58.3333%;}
-    .col-xl-8{width: 66.6666%;}
-    .col-xl-9{width: 75%;}
-    .col-xl-10{width: 83.3333%;}
-    .col-xl-11{width: 91.6666%;}
-    .col-xl-12{width: 100%;}
-}
 
 /* 等寬格線設計 container > row-cols-() > col*/
 [class*="cols-"] > .col{
     padding-left: 15px;
     padding-right: 15px;
     box-sizing: border-box;
-    margin-bottom: 20px;
 }
 
 .row-cols-1 .col{ width: 100%; }
@@ -170,12 +202,4 @@ img {
     .row-cols-lg-4 .col{ width: 25%; }
     .row-cols-lg-5 .col{ width: 20%; }
     .row-cols-lg-6 .col{ width: 16.666666%; }
-}
-@media screen and (min-width:1200px) {
-    .row-cols-xl-1 .col{ width: 100%; }
-    .row-cols-xl-2 .col{ width: 50%; }
-    .row-cols-xl-3 .col{ width: 33.333333%; }
-    .row-cols-xl-4 .col{ width: 25%; }
-    .row-cols-xl-5 .col{ width: 20%; }
-    .row-cols-xl-6 .col{ width: 16.666666%; }
 }

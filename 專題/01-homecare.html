@@ -4,8 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!-- pawsday共版 -->
     <link rel="stylesheet" href="./pawsday.css" />
-    <link rel="stylesheet" href="./01-homecare.css" />
+    <!-- 分頁樣式 -->
+    <link rel="stylesheet" href="./01-service.css" />
+    <!-- font awesome -->
     <script
       src="https://kit.fontawesome.com/8b9cdc6b98.js"
       crossorigin="anonymous"
@@ -14,32 +24,33 @@
   </head>
   <body>
     <main>
-      <section class="banner">
+      <section class="banner" style="background-image: url(./01-homecare_banner.jpg)">
         <h2>到府照顧</h2>
       </section>
       <div class="container">
-        <ul class="service-type">
-          <a href="">
-            <li class="homecare">
-              <i class="fa-solid fa-house-chimney-user"></i>
-              <p>到府照顧</p>
-            </li>
-          </a>
-          <a href="">
-            <li class="homesalon">
-              <i class="fa-solid fa-bath"></i>
-              <p>到府洗澡</p>
-            </li>
-          </a>
-          <a href="">
-            <li class="walking">
-              <i class="fa-solid fa-person-walking-with-cane"></i>
-              <p>陪伴散步</p>
-            </li>
-          </a>
-        </ul>
-
-        <article class="homecare">
+        <div class="service-box">
+          <ul class="service-type">
+            <a href="">
+              <li class="homecare">
+                <i class="fa-solid fa-house-chimney-user"></i>
+                <p>到府照顧</p>
+              </li>
+            </a>
+            <a href="">
+              <li class="homesalon">
+                <i class="fa-solid fa-bath"></i>
+                <p>到府洗澡</p>
+              </li>
+            </a>
+            <a href="">
+              <li class="walking">
+                <i class="fa-solid fa-person-walking-with-cane"></i>
+                <p>陪伴散步</p>
+              </li>
+            </a>
+          </ul>
+        </div>
+        <article class="service-content">
           <h3>服務內容</h3>
           <p>
             ＄400～700／次<br />
@@ -70,7 +81,7 @@
             </li>
           </ul>
         </article>
-        <a href="" class="search-btn">立即搜尋優良保姆</a>
+        <div class="btn-box"><a href="" class="search-btn pawsday-btn">立即搜尋優良保姆</a></div>
       </div>
 
       <section class="service-introduction">
@@ -99,5 +110,10 @@
         </div>
       </section>
     </main>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"
+  ></script>
   </body>
 </html>
